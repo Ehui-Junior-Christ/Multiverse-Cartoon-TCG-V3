@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ben10",
+    "name": "Ben 10",
+    "hue": 148,
+    "glyph": "⌬"
+  },
+  {
+    "id": "adventure",
+    "name": "Adventure Time",
+    "hue": 188,
+    "glyph": "❖"
+  },
+  {
+    "id": "powerpuff",
+    "name": "Les Super Nanas",
+    "hue": 328,
+    "glyph": "✿"
+  },
+  {
+    "id": "titans",
+    "name": "Teen Titans",
+    "hue": 264,
+    "glyph": "✦"
+  },
+  {
+    "id": "bottom",
+    "name": "Bikini Bottom",
+    "hue": 44,
+    "glyph": "≈"
+  },
+  {
+    "id": "tomjerry",
+    "name": "Tom & Jerry",
+    "hue": 14,
+    "glyph": "✷"
+  },
+  {
+    "id": "scooby",
+    "name": "Scooby-Doo",
+    "hue": 96,
+    "glyph": "❂"
+  },
+  {
+    "id": "looney",
+    "name": "Looney Tunes",
+    "hue": 214,
+    "glyph": "✺"
+  }
+]
