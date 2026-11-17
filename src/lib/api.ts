@@ -5,6 +5,10 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
     headers: { 'Content-Type': 'application/json' },
     ...init,
   })
+  const contentType = response.headers.get('content-type') || ''
+  if (!contentType.includes('application/json')) {
+    throw new Error('API non disponible sur ce serveur')
+  }
   if (!response.ok) {
     let message = `Erreur ${response.status}`
     try {

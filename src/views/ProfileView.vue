@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useProfileStore } from '../stores/profile'
+import { useAuthStore } from '../stores/auth'
 import { XP_REWARDS } from '../engine/progress'
 
 const store = useProfileStore()
+const auth = useAuthStore()
 const nameInput = ref(store.profile.name)
 const saved = ref(false)
 const avatarSaved = ref(false)
@@ -193,30 +195,38 @@ async function saveName() {
 
       <section class="panel">
         <div class="panel__head">
-          <h2>Sauvegarde locale</h2>
-          <span class="chip" :class="store.offline ? 'chip--warn' : 'chip--ok'">
-            {{ store.offline ? 'Navigateur' : 'SQLite' }}
+          <h2>Sauvegarde & Compte</h2>
+          <span class="chip" :class="auth.isAuthenticated ? 'chip--ok' : 'chip--warn'">
+            {{ auth.isAuthenticated ? 'Cloud Supabase' : 'Navigateur Local' }}
           </span>
         </div>
         <div class="panel__body">
-          <p class="hint">
-            Profil, collection, decks et historique sont stockés localement dans
-            <code>data/multiverse.db</code> (SQLite). Exportez un instantané JSON pour archiver une version.
-          </p>
-          <div style="display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap">
-            <button class="btn btn--gold" type="button" @click="store.exportBackup()">⤓ Exporter la sauvegarde</button>
-            <button class="btn" type="button" @click="store.load()">↻ Recharger depuis la base</button>
+          <div v-if="auth.isAuthenticated" style="margin-bottom: 14px">
+            <p style="color: var(--ok); font-weight: 600; display: flex; align-items: center; gap: 6px">
+              <span>●</span> Compte synchronisé : <strong>{{ auth.username }}</strong>
+            </p>
+            <p class="hint" style="margin-top: 4px">
+              Connecté en tant que <code>{{ auth.user?.email }}</code>. Votre progression, decks et cartes sont rattachés à votre profil Supabase.
+            </p>
           </div>
-          <p class="hint" style="margin-top: 14px">
-            Restauration : arrêtez l'application et remplacez <code>data/multiverse.db</code> par une copie, ou
-            utilisez <code>npm run backup</code>. La procédure complète est dans le README.
-          </p>
-          <p v-if="store.offline" class="notice" style="margin-top: 12px">
-            <span>⚠</span>
-            <span>
-              API locale injoignable ({{ store.loadingError ?? 'connexion refusée' }}). Les données sont conservées dans ce
-              navigateur ; lancez <code>npm run dev</code> pour retrouver la base SQLite.
-            </span>
+          <div v-else style="margin-bottom: 14px">
+            <p class="hint">
+              Vos données sont stockées de façon sécurisée dans la mémoire de votre navigateur. Créez un compte pour synchroniser votre collection entre appareils.
+            </p>
+            <router-link to="/connexion" class="btn btn--sm btn--gold" style="margin-top: 8px; display: inline-block">
+              🔐 Se connecter ou créer un compte Cloud
+            </router-link>
+          </div>
+
+          <div style="display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap">
+            <button class="btn btn--gold" type="button" @click="store.exportBackup()">⤓ Exporter la sauvegarde (JSON)</button>
+            <button v-if="!auth.isAuthenticated" class="btn" type="button" @click="store.load()">↻ Recharger</button>
+          </div>
+
+          <!-- Afficher l'erreur locale uniquement si on est expressément en environnement local de dev sans Supabase -->
+          <p v-if="store.offline && !auth.isConfigured && !auth.isAuthenticated" class="notice" style="margin-top: 12px">
+            <span>ℹ</span>
+            <span>Mode hors-ligne : Les données sont conservées localement dans votre navigateur.</span>
           </p>
         </div>
       </section>
