@@ -8,7 +8,7 @@
  *
  * Commande : npm run art   (aussi exécutée avant `dev` et `build`)
  */
-import { readdirSync, statSync, writeFileSync } from 'node:fs'
+import { readdirSync, statSync, writeFileSync, mkdirSync } from 'node:fs'
 import { resolve, dirname, join, extname, basename } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -50,6 +50,7 @@ walk(CARDS_DIR)
 const output = {}
 for (const key of Object.keys(manifest).sort()) output[key] = manifest[key].url
 
+mkdirSync(dirname(OUT), { recursive: true })
 writeFileSync(OUT, JSON.stringify(output, null, 2) + '\n', 'utf8')
 
 const total = Object.keys(output).length
