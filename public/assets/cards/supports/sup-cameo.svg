@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Caméo Surprise">
+  <defs>
+    <radialGradient id="bg" cx="44%" cy="49%" r="85%">
+      <stop offset="0%" stop-color="hsl(216 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(188 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(188 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(216 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(216 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="235" cy="235.52" r="181" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="235" cy="235.52" r="223" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="235" cy="235.52" r="265" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="235" cy="235.52" r="86.17999999999999" fill="rgba(8,10,26,0.42)" stroke="hsl(216 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="235" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="72.28" font-weight="700" fill="hsl(216 96% 78%)" opacity="0.92">CS</text>
+  <polygon points="103.66233251377193,148.94429481705578 113.66233251377193,158.94429481705578 103.66233251377193,168.94429481705578 93.66233251377193,158.94429481705578" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="297.73044985811435,366.52642042169964 305.73044985811435,374.52642042169964 297.73044985811435,382.52642042169964 289.73044985811435,374.52642042169964" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="426.73702766686256,128.22032454881236 433.73702766686256,135.22032454881236 426.73702766686256,142.22032454881236 419.73702766686256,135.22032454881236" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="409.19544222505215,79.04940825862502 416.19544222505215,86.04940825862502 409.19544222505215,93.04940825862502 402.19544222505215,86.04940825862502" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="130.95321066996377,324.40514849886597 137.95321066996377,331.40514849886597 130.95321066996377,338.40514849886597 123.95321066996377,331.40514849886597" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="412.54780054929734,149.66022590479542 427.54780054929734,164.66022590479542 412.54780054929734,179.66022590479542 397.54780054929734,164.66022590479542" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="390.48598987075013,95.73635723078618 401.48598987075013,106.73635723078618 390.48598987075013,117.73635723078618 379.48598987075013,106.73635723078618" fill="hsl(216 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">ADVENTURE TIME</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❖ PLACEHOLDER SUP-CAMEO</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

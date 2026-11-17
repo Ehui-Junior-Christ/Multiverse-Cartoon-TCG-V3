@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Amulette de Résistance">
+  <defs>
+    <radialGradient id="bg" cx="48%" cy="43%" r="85%">
+      <stop offset="0%" stop-color="hsl(216 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(188 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(188 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(216 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(216 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="249" cy="235.52" r="169" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="249" cy="235.52" r="211" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="249" cy="235.52" r="253" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="249" cy="235.52" r="78.74" fill="rgba(8,10,26,0.42)" stroke="hsl(216 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="249" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="66.04" font-weight="700" fill="hsl(216 96% 78%)" opacity="0.92">AD</text>
+  <polygon points="96.02389982871807,202.0915328169695 104.02389982871807,210.0915328169695 96.02389982871807,218.0915328169695 88.02389982871807,210.0915328169695" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="171.31330117252213,346.15077133501046 186.31330117252213,361.15077133501046 171.31330117252213,376.15077133501046 156.31330117252213,361.15077133501046" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="441.86264265797524,141.08383186457118 452.86264265797524,152.08383186457118 441.86264265797524,163.08383186457118 430.86264265797524,152.08383186457118" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="507.36908901729447,205.51181277619546 524.3690890172945,222.51181277619546 507.36908901729447,239.51181277619546 490.36908901729447,222.51181277619546" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="405.97608813955344,221.5471799763295 417.97608813955344,233.5471799763295 405.97608813955344,245.5471799763295 393.97608813955344,233.5471799763295" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="111.60609813531764,130.99058089447868 120.60609813531764,139.99058089447868 111.60609813531764,148.99058089447868 102.60609813531764,139.99058089447868" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="447.66320839325857,303.57439317131434 455.66320839325857,311.57439317131434 447.66320839325857,319.57439317131434 439.66320839325857,311.57439317131434" fill="hsl(216 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">ADVENTURE TIME</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❖ PLACEHOLDER EQ-AMULETTE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

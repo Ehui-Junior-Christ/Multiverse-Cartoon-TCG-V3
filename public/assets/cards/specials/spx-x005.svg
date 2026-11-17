@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Résonance : Murmure de Cristal">
+  <defs>
+    <radialGradient id="bg" cx="47%" cy="32%" r="85%">
+      <stop offset="0%" stop-color="hsl(72 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(44 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(44 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(72 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(72 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="218" cy="235.52" r="140" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="218" cy="235.52" r="182" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="218" cy="235.52" r="224" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="218" cy="235.52" r="60.76" fill="rgba(8,10,26,0.42)" stroke="hsl(72 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="218" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="50.96" font-weight="700" fill="hsl(72 96% 78%)" opacity="0.92">RM</text>
+  <polygon points="313.12253766110643,288.1870766820324 322.12253766110643,297.1870766820324 313.12253766110643,306.1870766820324 304.12253766110643,297.1870766820324" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="93.90080021472558,302.494746793838 101.90080021472558,310.494746793838 93.90080021472558,318.494746793838 85.90080021472558,310.494746793838" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="310.0164263060346,345.12156430425176 325.0164263060346,360.12156430425176 310.0164263060346,375.12156430425176 295.0164263060346,360.12156430425176" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="189.97005101681611,388.8856427118029 200.97005101681611,399.8856427118029 189.97005101681611,410.8856427118029 178.97005101681611,399.8856427118029" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="191.3873035753268,308.66608288362755 208.3873035753268,325.66608288362755 191.3873035753268,342.66608288362755 174.3873035753268,325.66608288362755" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="353.86463200715866,151.99330295584727 373.86463200715866,171.99330295584727 353.86463200715866,191.99330295584727 333.86463200715866,171.99330295584727" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="200.917474421459,73.93700420529288 221.917474421459,94.93700420529288 200.917474421459,115.93700420529288 179.917474421459,94.93700420529288" fill="hsl(72 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">BIKINI BOTTOM</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">≈ PLACEHOLDER SPX-X005</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

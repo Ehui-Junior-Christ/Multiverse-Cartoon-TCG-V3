@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Sacrifice : Offrande Cosmique">
+  <defs>
+    <radialGradient id="bg" cx="51%" cy="46%" r="85%">
+      <stop offset="0%" stop-color="hsl(292 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(264 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(264 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(292 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(292 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="252" cy="235.52" r="146" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="252" cy="235.52" r="188" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="252" cy="235.52" r="230" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="252" cy="235.52" r="64.48" fill="rgba(8,10,26,0.42)" stroke="hsl(292 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="252" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="54.08" font-weight="700" fill="hsl(292 96% 78%)" opacity="0.92">SO</text>
+  <polygon points="123.19093274426527,197.92650791077594 134.19093274426527,208.92650791077594 123.19093274426527,219.92650791077594 112.19093274426527,208.92650791077594" fill="hsl(292 96% 78%)" opacity="0.18" /><polygon points="183.66824396326555,329.022458556449 200.66824396326555,346.022458556449 183.66824396326555,363.022458556449 166.66824396326555,346.022458556449" fill="hsl(292 96% 78%)" opacity="0.26" /><polygon points="425.14779474182666,148.61286238508168 437.14779474182666,160.61286238508168 425.14779474182666,172.61286238508168 413.14779474182666,160.61286238508168" fill="hsl(292 96% 78%)" opacity="0.33999999999999997" /><polygon points="16.574884138681483,230.3730200186018 33.57488413868148,247.3730200186018 16.574884138681483,264.3730200186018 -0.42511586131851686,247.3730200186018" fill="hsl(292 96% 78%)" opacity="0.18" /><polygon points="304.3579712175627,312.33030826109143 316.3579712175627,324.33030826109143 304.3579712175627,336.33030826109143 292.3579712175627,324.33030826109143" fill="hsl(292 96% 78%)" opacity="0.26" /><polygon points="275.381080961291,106.73717440501966 284.381080961291,115.73717440501966 275.381080961291,124.73717440501966 266.381080961291,115.73717440501966" fill="hsl(292 96% 78%)" opacity="0.33999999999999997" /><polygon points="139.04303349890915,348.0952245524053 147.04303349890915,356.0952245524053 139.04303349890915,364.0952245524053 131.04303349890915,356.0952245524053" fill="hsl(292 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">TEEN TITANS</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✦ PLACEHOLDER SPX-OFFRANDE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

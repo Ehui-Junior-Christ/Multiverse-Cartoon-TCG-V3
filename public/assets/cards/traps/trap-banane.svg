@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Peau de Banane">
+  <defs>
+    <radialGradient id="bg" cx="57%" cy="42%" r="85%">
+      <stop offset="0%" stop-color="hsl(242 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(214 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(214 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(242 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(242 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="228" cy="235.52" r="156" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="228" cy="235.52" r="198" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="228" cy="235.52" r="240" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="228" cy="235.52" r="70.67999999999999" fill="rgba(8,10,26,0.42)" stroke="hsl(242 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="228" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="59.28" font-weight="700" fill="hsl(242 96% 78%)" opacity="0.92">PD</text>
+  <polygon points="316.6552524468948,298.22095493394494 335.6552524468948,317.22095493394494 316.6552524468948,336.22095493394494 297.6552524468948,317.22095493394494" fill="hsl(242 96% 78%)" opacity="0.18" /><polygon points="89.66801886065917,303.1737013169472 102.66801886065917,316.1737013169472 89.66801886065917,329.1737013169472 76.66801886065917,316.1737013169472" fill="hsl(242 96% 78%)" opacity="0.26" /><polygon points="415.18488968609256,145.85986065636166 433.18488968609256,163.85986065636166 415.18488968609256,181.85986065636166 397.18488968609256,163.85986065636166" fill="hsl(242 96% 78%)" opacity="0.33999999999999997" /><polygon points="42.34144326519805,107.3188247852014 54.34144326519805,119.3188247852014 42.34144326519805,131.3188247852014 30.341443265198052,119.3188247852014" fill="hsl(242 96% 78%)" opacity="0.18" /><polygon points="272.4984471899924,325.1255396094815 281.4984471899924,334.1255396094815 272.4984471899924,343.1255396094815 263.4984471899924,334.1255396094815" fill="hsl(242 96% 78%)" opacity="0.26" /><polygon points="83.99497500125938,294.8505579338034 99.99497500125938,310.8505579338034 83.99497500125938,326.8505579338034 67.99497500125938,310.8505579338034" fill="hsl(242 96% 78%)" opacity="0.33999999999999997" /><polygon points="131.75401405521606,80.51676414788756 150.75401405521606,99.51676414788756 131.75401405521606,118.51676414788756 112.75401405521606,99.51676414788756" fill="hsl(242 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">LOONEY TUNES</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✺ PLACEHOLDER TRAP-BANANE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

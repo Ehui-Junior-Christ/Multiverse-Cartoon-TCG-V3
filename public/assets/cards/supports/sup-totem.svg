@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Totem Protecteur">
+  <defs>
+    <radialGradient id="bg" cx="64%" cy="39%" r="85%">
+      <stop offset="0%" stop-color="hsl(216 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(188 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(188 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(216 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(216 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="265" cy="235.52" r="139" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="265" cy="235.52" r="181" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="265" cy="235.52" r="223" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="265" cy="235.52" r="60.14" fill="rgba(8,10,26,0.42)" stroke="hsl(216 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="265" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="50.440000000000005" font-weight="700" fill="hsl(216 96% 78%)" opacity="0.92">TP</text>
+  <polygon points="373.86024718916826,180.42491843022464 381.86024718916826,188.42491843022464 373.86024718916826,196.42491843022464 365.86024718916826,188.42491843022464" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="253.76920772719578,104.88237529388118 268.76920772719575,119.88237529388118 253.76920772719578,134.88237529388118 238.76920772719578,119.88237529388118" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="305.5427797094631,361.8519231430263 316.5427797094631,372.8519231430263 305.5427797094631,383.8519231430263 294.5427797094631,372.8519231430263" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="399.60282277497635,359.91072203254134 408.60282277497635,368.91072203254134 399.60282277497635,377.91072203254134 390.60282277497635,368.91072203254134" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="344.92368966332936,290.58222671562544 360.92368966332936,306.58222671562544 344.92368966332936,322.58222671562544 328.92368966332936,306.58222671562544" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="425.118025154292,228.6369394619864 444.118025154292,247.6369394619864 425.118025154292,266.6369394619864 406.118025154292,247.6369394619864" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="127.1141776686232,123.24220792140875 140.1141776686232,136.24220792140875 127.1141776686232,149.24220792140875 114.1141776686232,136.24220792140875" fill="hsl(216 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">ADVENTURE TIME</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❖ PLACEHOLDER SUP-TOTEM</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

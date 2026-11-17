@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Grande Claque Cartoon">
+  <defs>
+    <radialGradient id="bg" cx="46%" cy="31%" r="85%">
+      <stop offset="0%" stop-color="hsl(42 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(14 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(14 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(42 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(42 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="237" cy="235.52" r="167" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="237" cy="235.52" r="209" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="237" cy="235.52" r="251" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="237" cy="235.52" r="77.5" fill="rgba(8,10,26,0.42)" stroke="hsl(42 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="237" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="65" font-weight="700" fill="hsl(42 96% 78%)" opacity="0.92">GC</text>
+  <polygon points="383.55537921789414,187.18659396258133 395.55537921789414,199.18659396258133 383.55537921789414,211.18659396258133 371.55537921789414,199.18659396258133" fill="hsl(42 96% 78%)" opacity="0.18" /><polygon points="110.53431539817579,327.6471478509638 119.53431539817579,336.6471478509638 110.53431539817579,345.6471478509638 101.53431539817579,336.6471478509638" fill="hsl(42 96% 78%)" opacity="0.26" /><polygon points="451.3613581942451,263.7763338499774 467.3613581942451,279.7763338499774 451.3613581942451,295.7763338499774 435.3613581942451,279.7763338499774" fill="hsl(42 96% 78%)" opacity="0.33999999999999997" /><polygon points="-19.8434425439076,218.06219713016924 -8.8434425439076,229.06219713016924 -19.8434425439076,240.06219713016924 -30.8434425439076,229.06219713016924" fill="hsl(42 96% 78%)" opacity="0.18" /><polygon points="380.71349745785204,268.3260958252158 389.71349745785204,277.3260958252158 380.71349745785204,286.3260958252158 371.71349745785204,277.3260958252158" fill="hsl(42 96% 78%)" opacity="0.26" /><polygon points="108.10230994818778,127.9973882836633 116.10230994818778,135.9973882836633 108.10230994818778,143.9973882836633 100.10230994818778,135.9973882836633" fill="hsl(42 96% 78%)" opacity="0.33999999999999997" /><polygon points="23.74403942024307,275.4632009102826 30.74403942024307,282.4632009102826 23.74403942024307,289.4632009102826 16.74403942024307,282.4632009102826" fill="hsl(42 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">TOM &amp; JERRY</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✷ PLACEHOLDER TEC-GRANDE-CLAQUE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

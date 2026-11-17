@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Crossover : Héros du Multivers">
+  <defs>
+    <radialGradient id="bg" cx="57%" cy="42%" r="85%">
+      <stop offset="0%" stop-color="hsl(176 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(148 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(148 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(176 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(176 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="268" cy="235.52" r="144" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="268" cy="235.52" r="186" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="268" cy="235.52" r="228" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="268" cy="235.52" r="63.24" fill="rgba(8,10,26,0.42)" stroke="hsl(176 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="268" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="53.04" font-weight="700" fill="hsl(176 96% 78%)" opacity="0.92">CH</text>
+  <polygon points="349.2673147429869,299.4125420227829 360.2673147429869,310.4125420227829 349.2673147429869,321.4125420227829 338.2673147429869,310.4125420227829" fill="hsl(176 96% 78%)" opacity="0.18" /><polygon points="250.64827509756952,345.385256934416 259.6482750975695,354.385256934416 250.64827509756952,363.385256934416 241.64827509756952,354.385256934416" fill="hsl(176 96% 78%)" opacity="0.26" /><polygon points="435.7341135890848,149.09197895783615 443.7341135890848,157.09197895783615 435.7341135890848,165.09197895783615 427.7341135890848,157.09197895783615" fill="hsl(176 96% 78%)" opacity="0.33999999999999997" /><polygon points="501.10955935346846,205.83600046187453 516.1095593534685,220.83600046187453 501.10955935346846,235.83600046187453 486.10955935346846,220.83600046187453" fill="hsl(176 96% 78%)" opacity="0.18" /><polygon points="176.30509509941234,284.8860546241854 195.30509509941234,303.8860546241854 176.30509509941234,322.8860546241854 157.30509509941234,303.8860546241854" fill="hsl(176 96% 78%)" opacity="0.26" /><polygon points="427.5694415257609,247.46417676724775 448.5694415257609,268.46417676724775 427.5694415257609,289.46417676724775 406.5694415257609,268.46417676724775" fill="hsl(176 96% 78%)" opacity="0.33999999999999997" /><polygon points="131.6003279875003,108.20506696683947 153.6003279875003,130.20506696683947 131.6003279875003,152.20506696683947 109.6003279875003,130.20506696683947" fill="hsl(176 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">BEN 10</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">⌬ PLACEHOLDER SPX-HEROS-MULTIVERS</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

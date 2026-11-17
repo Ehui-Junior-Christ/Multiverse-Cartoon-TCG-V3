@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Deathstroke">
+  <defs>
+    <radialGradient id="bg" cx="54%" cy="49%" r="85%">
+      <stop offset="0%" stop-color="hsl(292 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(264 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(264 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(292 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(292 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="295" cy="235.52" r="141" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="295" cy="235.52" r="183" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="295" cy="235.52" r="225" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="295" cy="235.52" r="61.38" fill="rgba(8,10,26,0.42)" stroke="hsl(292 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="295" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="51.480000000000004" font-weight="700" fill="hsl(292 96% 78%)" opacity="0.92">D</text>
+  <polygon points="392.3575358487376,152.58523738736167 414.3575358487376,174.58523738736167 392.3575358487376,196.58523738736167 370.3575358487376,174.58523738736167" fill="hsl(292 96% 78%)" opacity="0.18" /><polygon points="192.42077625887651,312.72585003659015 206.42077625887651,326.72585003659015 192.42077625887651,340.72585003659015 178.42077625887651,326.72585003659015" fill="hsl(292 96% 78%)" opacity="0.26" /><polygon points="105.63144590015116,186.42359745091687 115.63144590015116,196.42359745091687 105.63144590015116,206.42359745091687 95.63144590015116,196.42359745091687" fill="hsl(292 96% 78%)" opacity="0.33999999999999997" /><polygon points="79.34292147914638,287.12375736837436 87.34292147914638,295.12375736837436 79.34292147914638,303.12375736837436 71.34292147914638,295.12375736837436" fill="hsl(292 96% 78%)" opacity="0.18" /><polygon points="253.00170807502678,316.33976530166456 260.0017080750268,323.33976530166456 253.00170807502678,330.33976530166456 246.00170807502678,323.33976530166456" fill="hsl(292 96% 78%)" opacity="0.26" /><polygon points="331.66702185804996,106.16792919680479 346.66702185804996,121.16792919680479 331.66702185804996,136.16792919680478 316.66702185804996,121.16792919680479" fill="hsl(292 96% 78%)" opacity="0.33999999999999997" /><polygon points="182.0054420388439,332.7085259619506 201.0054420388439,351.7085259619506 182.0054420388439,370.7085259619506 163.0054420388439,351.7085259619506" fill="hsl(292 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">TEEN TITANS</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✦ PLACEHOLDER CHR-DEATHSTROKE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

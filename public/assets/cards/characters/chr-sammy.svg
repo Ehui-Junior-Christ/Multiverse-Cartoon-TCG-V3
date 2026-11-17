@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Sammy">
+  <defs>
+    <radialGradient id="bg" cx="59%" cy="34%" r="85%">
+      <stop offset="0%" stop-color="hsl(124 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(96 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(96 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(124 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(124 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="260" cy="235.52" r="148" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="260" cy="235.52" r="190" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="260" cy="235.52" r="232" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="260" cy="235.52" r="65.72" fill="rgba(8,10,26,0.42)" stroke="hsl(124 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="260" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="55.120000000000005" font-weight="700" fill="hsl(124 96% 78%)" opacity="0.92">S</text>
+  <polygon points="274.21587100440087,313.9035839944613 293.21587100440087,332.9035839944613 274.21587100440087,351.9035839944613 255.21587100440087,332.9035839944613" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="120.74415247087137,292.725755809368 133.74415247087137,305.725755809368 120.74415247087137,318.725755809368 107.74415247087137,305.725755809368" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="167.38593805313243,94.64896172721257 177.38593805313243,104.64896172721257 167.38593805313243,114.64896172721257 157.38593805313243,104.64896172721257" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="321.5989327343999,385.04104959289475 337.5989327343999,401.04104959289475 321.5989327343999,417.04104959289475 305.5989327343999,401.04104959289475" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="180.06120568822365,137.3010559108052 199.06120568822365,156.3010559108052 180.06120568822365,175.3010559108052 161.06120568822365,156.3010559108052" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="96.58551169048579,256.2580123520007 109.58551169048579,269.2580123520007 96.58551169048579,282.2580123520007 83.58551169048579,269.2580123520007" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="190.22789076156357,355.5420521410342 208.22789076156357,373.5420521410342 190.22789076156357,391.5420521410342 172.22789076156357,373.5420521410342" fill="hsl(124 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">SCOOBY-DOO</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❂ PLACEHOLDER CHR-SAMMY</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

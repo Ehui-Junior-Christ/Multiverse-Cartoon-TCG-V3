@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Ben Tennyson">
+  <defs>
+    <radialGradient id="bg" cx="38%" cy="33%" r="85%">
+      <stop offset="0%" stop-color="hsl(176 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(148 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(148 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(176 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(176 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="239" cy="235.52" r="167" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="239" cy="235.52" r="209" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="239" cy="235.52" r="251" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="239" cy="235.52" r="77.5" fill="rgba(8,10,26,0.42)" stroke="hsl(176 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="239" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="65" font-weight="700" fill="hsl(176 96% 78%)" opacity="0.92">BT</text>
+  <polygon points="84.21242211304104,215.6793072832875 98.21242211304104,229.6793072832875 84.21242211304104,243.6793072832875 70.21242211304104,229.6793072832875" fill="hsl(176 96% 78%)" opacity="0.18" /><polygon points="414.2377485131228,268.49646523203734 432.2377485131228,286.49646523203734 414.2377485131228,304.49646523203734 396.2377485131228,286.49646523203734" fill="hsl(176 96% 78%)" opacity="0.26" /><polygon points="86.91436570606282,98.09384966802601 106.91436570606282,118.09384966802601 86.91436570606282,138.093849668026 66.91436570606282,118.09384966802601" fill="hsl(176 96% 78%)" opacity="0.33999999999999997" /><polygon points="-6.770322282500132,268.6204602418952 14.229677717499868,289.6204602418952 -6.770322282500132,310.6204602418952 -27.770322282500132,289.6204602418952" fill="hsl(176 96% 78%)" opacity="0.18" /><polygon points="173.49416943019162,112.37605096670987 195.49416943019162,134.37605096670987 173.49416943019162,156.37605096670987 151.49416943019162,134.37605096670987" fill="hsl(176 96% 78%)" opacity="0.26" /><polygon points="287.9167995243764,352.96318644141644 301.9167995243764,366.96318644141644 287.9167995243764,380.96318644141644 273.9167995243764,366.96318644141644" fill="hsl(176 96% 78%)" opacity="0.33999999999999997" /><polygon points="459.2544999527157,242.6371177068595 477.2544999527157,260.6371177068595 459.2544999527157,278.6371177068595 441.2544999527157,260.6371177068595" fill="hsl(176 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">BEN 10</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">⌬ PLACEHOLDER CHR-BEN-TENYSON</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

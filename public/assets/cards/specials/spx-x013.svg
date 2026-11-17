@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Sacrifice : Flux du Chaos">
+  <defs>
+    <radialGradient id="bg" cx="54%" cy="49%" r="85%">
+      <stop offset="0%" stop-color="hsl(72 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(44 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(44 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(72 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(72 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="235" cy="235.52" r="141" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="235" cy="235.52" r="183" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="235" cy="235.52" r="225" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="235" cy="235.52" r="61.38" fill="rgba(8,10,26,0.42)" stroke="hsl(72 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="235" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="51.480000000000004" font-weight="700" fill="hsl(72 96% 78%)" opacity="0.92">SF</text>
+  <polygon points="210.38563959642573,134.34646720138096 220.38563959642573,144.34646720138096 210.38563959642573,154.34646720138096 200.38563959642573,144.34646720138096" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="148.62315992998762,319.0469245649182 164.62315992998762,335.0469245649182 148.62315992998762,351.0469245649182 132.62315992998762,335.0469245649182" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="333.5,347.3570432727848 344.5,358.3570432727848 333.5,369.3570432727848 322.5,358.3570432727848" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="464.2781610291454,246.78930919514414 473.2781610291454,255.78930919514414 464.2781610291454,264.78930919514414 455.2781610291454,255.78930919514414" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="143.78322522693534,161.84392216339347 151.78322522693534,169.84392216339347 143.78322522693534,177.84392216339347 135.78322522693534,169.84392216339347" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="378.9204576360051,275.6171826085522 393.9204576360051,290.6171826085522 378.9204576360051,305.6171826085522 363.9204576360051,290.6171826085522" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="88.60046938095334,311.42948520594047 107.60046938095334,330.42948520594047 88.60046938095334,349.42948520594047 69.60046938095334,330.42948520594047" fill="hsl(72 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">BIKINI BOTTOM</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">≈ PLACEHOLDER SPX-X013</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

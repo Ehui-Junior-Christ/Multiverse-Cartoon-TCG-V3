@@ -1,0 +1,68 @@
+/* ================================================================== */
+/* Campagne                                                            */
+/* ================================================================== */
+
+.campaign {
+  display: grid;
+  gap: 16px;
+}
+
+.campaign__list {
+  display: grid;
+  gap: 14px;
+}
+
+.campaign__mission .panel__body {
+  display: grid;
+  gap: 10px;
+}
+
+.campaign__mission--done {
+  border-color: rgba(94, 224, 160, 0.35);
+}
+
+.campaign__subtitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: var(--gold-bright);
+}
+
+.campaign__meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.campaign__mission .btn {
+  justify-self: start;
+}
+
+
+/* ================================================================== */
+/* CAMPAIGN UPGRADE — Effets visuels premium                           */
+/* ================================================================== */
+
+/* --- Mission terminée : halo vert --- */
+.campaign__mission--done {
+  box-shadow: 0 0 24px rgba(94, 224, 160, 0.1), 0 0 0 1px rgba(94, 224, 160, 0.2);
+}
+
+/* --- Mission panel : hover amélioré --- */
+.campaign__mission .panel {
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.campaign__mission .panel:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(230, 195, 119, 0.18);
+}
+
+/* --- Subtitle : glow doré --- */
+.campaign__subtitle {
+  text-shadow: 0 0 20px rgba(230, 195, 119, 0.3);
+  transition: text-shadow 0.3s ease;
+}
+.campaign__mission .panel:hover .campaign__subtitle {
+  text-shadow: 0 0 28px rgba(230, 195, 119, 0.5);
+}

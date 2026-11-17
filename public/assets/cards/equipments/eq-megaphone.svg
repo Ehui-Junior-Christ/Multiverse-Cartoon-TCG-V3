@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Mégaphone de Popularité">
+  <defs>
+    <radialGradient id="bg" cx="59%" cy="34%" r="85%">
+      <stop offset="0%" stop-color="hsl(356 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(328 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(328 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(356 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(356 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="240" cy="235.52" r="178" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="240" cy="235.52" r="220" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="240" cy="235.52" r="262" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="240" cy="235.52" r="84.32" fill="rgba(8,10,26,0.42)" stroke="hsl(356 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="240" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="70.72" font-weight="700" fill="hsl(356 96% 78%)" opacity="0.92">MD</text>
+  <polygon points="391.6485459686718,269.13316358041965 406.6485459686718,284.13316358041965 391.6485459686718,299.13316358041965 376.6485459686718,284.13316358041965" fill="hsl(356 96% 78%)" opacity="0.18" /><polygon points="40.274093049085224,208.98362230101614 59.274093049085224,227.98362230101614 40.274093049085224,246.98362230101614 21.274093049085224,227.98362230101614" fill="hsl(356 96% 78%)" opacity="0.26" /><polygon points="327.6579428593234,58.308064182587685 348.6579428593234,79.30806418258769 327.6579428593234,100.30806418258769 306.6579428593234,79.30806418258769" fill="hsl(356 96% 78%)" opacity="0.33999999999999997" /><polygon points="23.18344550751408,108.10095771764442 37.18344550751408,122.10095771764442 23.18344550751408,136.1009577176444 9.18344550751408,122.10095771764442" fill="hsl(356 96% 78%)" opacity="0.18" /><polygon points="164.63757704323524,332.01309977099373 174.63757704323524,342.01309977099373 164.63757704323524,352.01309977099373 154.63757704323524,342.01309977099373" fill="hsl(356 96% 78%)" opacity="0.26" /><polygon points="45.940854744800674,184.6832470336479 61.940854744800674,200.6832470336479 45.940854744800674,216.6832470336479 29.940854744800674,200.6832470336479" fill="hsl(356 96% 78%)" opacity="0.33999999999999997" /><polygon points="458.4578198003452,164.14216786060774 469.4578198003452,175.14216786060774 458.4578198003452,186.14216786060774 447.4578198003452,175.14216786060774" fill="hsl(356 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">LES SUPER NANAS</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✿ PLACEHOLDER EQ-MEGAPHONE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

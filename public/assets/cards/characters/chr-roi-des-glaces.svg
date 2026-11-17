@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Le Roi des Glaces">
+  <defs>
+    <radialGradient id="bg" cx="51%" cy="36%" r="85%">
+      <stop offset="0%" stop-color="hsl(216 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(188 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(188 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(216 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(216 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="222" cy="235.52" r="158" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="222" cy="235.52" r="200" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="222" cy="235.52" r="242" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="222" cy="235.52" r="71.92" fill="rgba(8,10,26,0.42)" stroke="hsl(216 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="222" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="60.32" font-weight="700" fill="hsl(216 96% 78%)" opacity="0.92">LR</text>
+  <polygon points="323.4201220870136,298.136999811599 336.4201220870136,311.136999811599 323.4201220870136,324.136999811599 310.4201220870136,311.136999811599" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="84.11200023858399,308.82527421537554 94.11200023858399,318.82527421537554 84.11200023858399,328.82527421537554 74.11200023858399,318.82527421537554" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="426.6492177760896,264.5686322636793 442.6492177760896,280.5686322636793 426.6492177760896,296.5686322636793 410.6492177760896,280.5686322636793" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="403.37571800155433,94.74237282724032 422.37571800155433,113.74237282724032 403.37571800155433,132.74237282724033 384.37571800155433,113.74237282724032" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="313.88077709327627,140.82641653164325 326.88077709327627,153.82641653164325 313.88077709327627,166.82641653164325 300.88077709327627,153.82641653164325" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="200.0635181870735,96.88601874728468 210.0635181870735,106.88601874728468 200.0635181870735,116.88601874728468 190.0635181870735,106.88601874728468" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="430.5151938640403,184.85954154669724 446.5151938640403,200.85954154669724 430.5151938640403,216.85954154669724 414.5151938640403,200.85954154669724" fill="hsl(216 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">ADVENTURE TIME</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❖ PLACEHOLDER CHR-ROI-DES-GLACES</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

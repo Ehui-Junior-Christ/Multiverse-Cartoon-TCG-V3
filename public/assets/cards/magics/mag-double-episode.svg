@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Double Épisode">
+  <defs>
+    <radialGradient id="bg" cx="45%" cy="40%" r="85%">
+      <stop offset="0%" stop-color="hsl(72 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(44 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(44 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(72 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(72 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="226" cy="235.52" r="176" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="226" cy="235.52" r="218" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="226" cy="235.52" r="260" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="226" cy="235.52" r="83.08" fill="rgba(8,10,26,0.42)" stroke="hsl(72 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="226" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="69.68" font-weight="700" fill="hsl(72 96% 78%)" opacity="0.92">DÉ</text>
+  <polygon points="120.58283201140755,308.97452784348894 137.58283201140756,325.97452784348894 120.58283201140755,342.97452784348894 103.58283201140755,325.97452784348894" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="52.82529798639965,284.63445946231786 72.82529798639965,304.63445946231786 52.82529798639965,324.63445946231786 32.82529798639965,304.63445946231786" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="154.3080573050122,373.38448048194243 175.3080573050122,394.38448048194243 154.3080573050122,415.38448048194243 133.3080573050122,394.38448048194243" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="-33.18243723287259,178.437374072063 -19.182437232872587,192.437374072063 -33.18243723287259,206.437374072063 -47.18243723287259,192.437374072063" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="379.10718994554105,183.2039125176909 389.10718994554105,193.2039125176909 379.10718994554105,203.2039125176909 369.10718994554105,193.2039125176909" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="236.3625193361029,361.88462647461205 252.3625193361029,377.88462647461205 236.3625193361029,393.88462647461205 220.3625193361029,377.88462647461205" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="185.71362278127216,381.02228706315924 204.71362278127216,400.02228706315924 185.71362278127216,419.02228706315924 166.71362278127216,400.02228706315924" fill="hsl(72 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">BIKINI BOTTOM</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">≈ PLACEHOLDER MAG-DOUBLE-EPISODE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

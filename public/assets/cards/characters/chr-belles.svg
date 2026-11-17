@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Belles">
+  <defs>
+    <radialGradient id="bg" cx="41%" cy="36%" r="85%">
+      <stop offset="0%" stop-color="hsl(356 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(328 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(328 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(356 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(356 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="222" cy="235.52" r="166" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="222" cy="235.52" r="208" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="222" cy="235.52" r="250" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="222" cy="235.52" r="76.88" fill="rgba(8,10,26,0.42)" stroke="hsl(356 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="222" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="64.48" font-weight="700" fill="hsl(356 96% 78%)" opacity="0.92">B</text>
+  <polygon points="159.3625569663268,121.22607965658841 172.3625569663268,134.2260796565884 159.3625569663268,147.2260796565884 146.3625569663268,134.2260796565884" fill="hsl(356 96% 78%)" opacity="0.18" /><polygon points="384.8127759114745,285.2 402.8127759114745,303.2 384.8127759114745,321.2 366.8127759114745,303.2" fill="hsl(356 96% 78%)" opacity="0.26" /><polygon points="57.02184874401851,322.47383612039994 77.02184874401851,342.47383612039994 57.02184874401851,362.47383612039994 37.02184874401851,342.47383612039994" fill="hsl(356 96% 78%)" opacity="0.33999999999999997" /><polygon points="-4.034583771885309,309.05299845269536 8.965416228114691,322.05299845269536 -4.034583771885309,335.05299845269536 -17.03458377188531,322.05299845269536" fill="hsl(356 96% 78%)" opacity="0.18" /><polygon points="272.13749578640204,112.68090033754774 290.13749578640204,130.68090033754774 272.13749578640204,148.68090033754774 254.13749578640204,130.68090033754774" fill="hsl(356 96% 78%)" opacity="0.26" /><polygon points="36.314591968114115,244.6949691878457 48.314591968114115,256.6949691878457 36.314591968114115,268.6949691878457 24.314591968114115,256.6949691878457" fill="hsl(356 96% 78%)" opacity="0.33999999999999997" /><polygon points="14.745145317621223,169.2384669446792 23.745145317621223,178.2384669446792 14.745145317621223,187.2384669446792 5.745145317621223,178.2384669446792" fill="hsl(356 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">LES SUPER NANAS</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✿ PLACEHOLDER CHR-BELLES</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

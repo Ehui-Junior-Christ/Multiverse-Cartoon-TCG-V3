@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Pulsion ancien">
+  <defs>
+    <radialGradient id="bg" cx="47%" cy="42%" r="85%">
+      <stop offset="0%" stop-color="hsl(216 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(188 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(188 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(216 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(216 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="228" cy="235.52" r="172" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="228" cy="235.52" r="214" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="228" cy="235.52" r="256" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="228" cy="235.52" r="80.6" fill="rgba(8,10,26,0.42)" stroke="hsl(216 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="228" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="67.60000000000001" font-weight="700" fill="hsl(216 96% 78%)" opacity="0.92">PA</text>
+  <polygon points="384.5036161174089,240.47142678220587 403.5036161174089,259.47142678220587 384.5036161174089,278.47142678220587 365.5036161174089,259.47142678220587" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="231.38576684883293,74.86127394055526 252.38576684883293,95.86127394055526 231.38576684883293,116.86127394055526 210.38576684883293,95.86127394055526" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="451.01765296730764,179.38921683535654 473.01765296730764,201.38921683535654 451.01765296730764,223.38921683535654 429.01765296730764,201.38921683535654" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="406.6835703363746,83.55743772655973 420.6835703363746,97.55743772655973 406.6835703363746,111.55743772655973 392.6835703363746,97.55743772655973" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="244.72455412282454,340.0889223464251 254.72455412282454,350.0889223464251 244.72455412282454,360.0889223464251 234.72455412282454,350.0889223464251" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="36.947295915631656,195.26482254348315 52.947295915631656,211.26482254348315 36.947295915631656,227.26482254348315 20.947295915631656,211.26482254348315" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="437.87510658715644,280.6624220527992 456.87510658715644,299.6624220527992 437.87510658715644,318.6624220527992 418.87510658715644,299.6624220527992" fill="hsl(216 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">ADVENTURE TIME</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❖ PLACEHOLDER TRAP-X010</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

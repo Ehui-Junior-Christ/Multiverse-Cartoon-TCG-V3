@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Fan-club Dévoué">
+  <defs>
+    <radialGradient id="bg" cx="44%" cy="39%" r="85%">
+      <stop offset="0%" stop-color="hsl(356 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(328 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(328 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(356 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(356 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="225" cy="235.52" r="183" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="225" cy="235.52" r="225" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="225" cy="235.52" r="267" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="225" cy="235.52" r="87.42" fill="rgba(8,10,26,0.42)" stroke="hsl(356 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="225" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="73.32000000000001" font-weight="700" fill="hsl(356 96% 78%)" opacity="0.92">FD</text>
+  <polygon points="393.8947062417685,238.78021133575322 409.8947062417685,254.78021133575322 393.8947062417685,270.7802113357532 377.8947062417685,254.78021133575322" fill="hsl(356 96% 78%)" opacity="0.18" /><polygon points="228.57774331964305,68.94248019491664 247.57774331964305,87.94248019491664 228.57774331964305,106.94248019491664 209.57774331964305,87.94248019491664" fill="hsl(356 96% 78%)" opacity="0.26" /><polygon points="458.7772765753796,178.74255624407988 479.7772765753796,199.74255624407988 458.7772765753796,220.74255624407988 437.7772765753796,199.74255624407988" fill="hsl(356 96% 78%)" opacity="0.33999999999999997" /><polygon points="25.340439457966426,87.46640234611533 39.340439457966426,101.46640234611533 25.340439457966426,115.46640234611533 11.340439457966426,101.46640234611533" fill="hsl(356 96% 78%)" opacity="0.18" /><polygon points="72.63788436378908,169.62468967206703 82.63788436378908,179.62468967206703 72.63788436378908,189.62468967206703 62.637884363789084,179.62468967206703" fill="hsl(356 96% 78%)" opacity="0.26" /><polygon points="32.363012738888784,270.00217315486873 48.363012738888784,286.00217315486873 32.363012738888784,302.00217315486873 16.363012738888784,286.00217315486873" fill="hsl(356 96% 78%)" opacity="0.33999999999999997" /><polygon points="306.7428142548349,54.81769381516091 325.7428142548349,73.81769381516091 306.7428142548349,92.81769381516091 287.7428142548349,73.81769381516091" fill="hsl(356 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">LES SUPER NANAS</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✿ PLACEHOLDER SUP-FANCLUB</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

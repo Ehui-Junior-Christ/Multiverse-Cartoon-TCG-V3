@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Ouverture du Multivers">
+  <defs>
+    <radialGradient id="bg" cx="63%" cy="48%" r="85%">
+      <stop offset="0%" stop-color="hsl(292 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(264 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(264 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(292 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(292 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="234" cy="235.52" r="154" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="234" cy="235.52" r="196" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="234" cy="235.52" r="238" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="234" cy="235.52" r="69.44" fill="rgba(8,10,26,0.42)" stroke="hsl(292 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="234" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="58.24" font-weight="700" fill="hsl(292 96% 78%)" opacity="0.92">OD</text>
+  <polygon points="300.66496191559645,136.2474381061033 309.66496191559645,145.2474381061033 300.66496191559645,154.2474381061033 291.66496191559645,145.2474381061033" fill="hsl(292 96% 78%)" opacity="0.18" /><polygon points="209.5055342310284,94.03323032906823 225.5055342310284,110.03323032906823 209.5055342310284,126.03323032906823 193.5055342310284,110.03323032906823" fill="hsl(292 96% 78%)" opacity="0.26" /><polygon points="345.283045488973,88.29512786114842 364.283045488973,107.29512786114842 345.283045488973,126.29512786114842 326.283045488973,107.29512786114842" fill="hsl(292 96% 78%)" opacity="0.33999999999999997" /><polygon points="87.15713435090021,362.8242864051084 100.15713435090021,375.8242864051084 87.15713435090021,388.8242864051084 74.15713435090021,375.8242864051084" fill="hsl(292 96% 78%)" opacity="0.18" /><polygon points="356.9756073373902,166.39999999999998 374.9756073373902,184.39999999999998 356.9756073373902,202.39999999999998 338.9756073373902,184.39999999999998" fill="hsl(292 96% 78%)" opacity="0.26" /><polygon points="221.7228606210339,89.10868355107509 241.7228606210339,109.10868355107509 221.7228606210339,129.1086835510751 201.7228606210339,109.10868355107509" fill="hsl(292 96% 78%)" opacity="0.33999999999999997" /><polygon points="439.41099615409917,183.08375234835472 460.41099615409917,204.08375234835472 439.41099615409917,225.08375234835472 418.41099615409917,204.08375234835472" fill="hsl(292 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">TEEN TITANS</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✦ PLACEHOLDER MAG-OUVERTURE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

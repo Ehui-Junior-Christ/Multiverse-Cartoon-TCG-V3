@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Attaque Combinée">
+  <defs>
+    <radialGradient id="bg" cx="37%" cy="42%" r="85%">
+      <stop offset="0%" stop-color="hsl(292 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(264 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(264 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(292 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(292 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="228" cy="235.52" r="158" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="228" cy="235.52" r="200" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="228" cy="235.52" r="242" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="228" cy="235.52" r="71.92" fill="rgba(8,10,26,0.42)" stroke="hsl(292 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="228" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="60.32" font-weight="700" fill="hsl(292 96% 78%)" opacity="0.92">AC</text>
+  <polygon points="104.18497796116179,160.81488694380553 123.18497796116179,179.81488694380553 104.18497796116179,198.81488694380553 85.18497796116179,179.81488694380553" fill="hsl(292 96% 78%)" opacity="0.18" /><polygon points="286.6022678022882,337.05920739767146 307.6022678022882,358.05920739767146 286.6022678022882,379.05920739767146 265.6022678022882,358.05920739767146" fill="hsl(292 96% 78%)" opacity="0.26" /><polygon points="398.90799915012065,120.79234123273244 420.90799915012065,142.79234123273244 398.90799915012065,164.79234123273244 376.90799915012065,142.79234123273244" fill="hsl(292 96% 78%)" opacity="0.33999999999999997" /><polygon points="-19.056285126752897,229.08252942502185 2.943714873247103,251.08252942502185 -19.056285126752897,273.08252942502185 -41.0562851267529,251.08252942502185" fill="hsl(292 96% 78%)" opacity="0.18" /><polygon points="175.67827936638616,311.65797443338585 197.67827936638616,333.65797443338585 175.67827936638616,355.65797443338585 153.67827936638616,333.65797443338585" fill="hsl(292 96% 78%)" opacity="0.26" /><polygon points="268.4911897818957,95.24163960383352 282.4911897818957,109.24163960383352 268.4911897818957,123.24163960383352 254.49118978189568,109.24163960383352" fill="hsl(292 96% 78%)" opacity="0.33999999999999997" /><polygon points="265.1607100207231,369.259178584121 283.1607100207231,387.259178584121 265.1607100207231,405.259178584121 247.16071002072312,387.259178584121" fill="hsl(292 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">TEEN TITANS</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✦ PLACEHOLDER TEC-ATTAQUE-COMBINEE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

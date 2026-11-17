@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Braises héroïque">
+  <defs>
+    <radialGradient id="bg" cx="41%" cy="36%" r="85%">
+      <stop offset="0%" stop-color="hsl(42 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(14 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(14 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(42 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(42 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="262" cy="235.52" r="170" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="262" cy="235.52" r="212" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="262" cy="235.52" r="254" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="262" cy="235.52" r="79.36" fill="rgba(8,10,26,0.42)" stroke="hsl(42 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="262" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="66.56" font-weight="700" fill="hsl(42 96% 78%)" opacity="0.92">BH</text>
+  <polygon points="169.12993013778924,306.553773280094 190.12993013778924,327.553773280094 169.12993013778924,348.553773280094 148.12993013778924,327.553773280094" fill="hsl(42 96% 78%)" opacity="0.18" /><polygon points="212.306743340316,355.0495862262008 226.306743340316,369.0495862262008 212.306743340316,383.0495862262008 198.306743340316,369.0495862262008" fill="hsl(42 96% 78%)" opacity="0.26" /><polygon points="312.83893828171347,66.97050305814653 322.83893828171347,76.97050305814653 312.83893828171347,86.97050305814653 302.83893828171347,76.97050305814653" fill="hsl(42 96% 78%)" opacity="0.33999999999999997" /><polygon points="307.1485261934019,403.87601136388537 323.1485261934019,419.87601136388537 307.1485261934019,435.87601136388537 291.1485261934019,419.87601136388537" fill="hsl(42 96% 78%)" opacity="0.18" /><polygon points="234.563587928625,328.5517299826688 253.563587928625,347.5517299826688 234.563587928625,366.5517299826688 215.563587928625,347.5517299826688" fill="hsl(42 96% 78%)" opacity="0.26" /><polygon points="74.19566065910934,193.77828786135294 87.19566065910934,206.77828786135294 74.19566065910934,219.77828786135294 61.195660659109336,206.77828786135294" fill="hsl(42 96% 78%)" opacity="0.33999999999999997" /><polygon points="55.53872657277219,159.3358134387058 65.53872657277219,169.3358134387058 55.53872657277219,179.3358134387058 45.53872657277219,169.3358134387058" fill="hsl(42 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">TOM &amp; JERRY</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✷ PLACEHOLDER MAG-X014</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

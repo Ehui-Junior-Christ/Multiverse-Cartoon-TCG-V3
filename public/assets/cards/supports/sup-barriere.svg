@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Barrière de Dessin">
+  <defs>
+    <radialGradient id="bg" cx="47%" cy="42%" r="85%">
+      <stop offset="0%" stop-color="hsl(124 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(96 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(96 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(124 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(124 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="288" cy="235.52" r="160" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="288" cy="235.52" r="202" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="288" cy="235.52" r="244" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="288" cy="235.52" r="73.16" fill="rgba(8,10,26,0.42)" stroke="hsl(124 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="288" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="61.36" font-weight="700" fill="hsl(124 96% 78%)" opacity="0.92">BD</text>
+  <polygon points="333.7345151674922,321.8645823764116 348.7345151674922,336.8645823764116 333.7345151674922,351.8645823764116 318.7345151674922,336.8645823764116" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="108.24072201168494,204.02082770112818 119.24072201168494,215.02082770112818 108.24072201168494,226.02082770112818 97.24072201168494,215.02082770112818" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="488.271712586426,160.26118259195732 505.271712586426,177.26118259195732 488.271712586426,194.26118259195732 471.271712586426,177.26118259195732" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="102.21379363065145,103.07649085540552 114.21379363065145,115.07649085540552 102.21379363065145,127.07649085540552 90.21379363065145,115.07649085540552" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="220.80940603854708,313.4656552175125 237.80940603854708,330.4656552175125 220.80940603854708,347.4656552175125 203.80940603854708,330.4656552175125" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="243.97021500086046,350.6675519712066 255.97021500086046,362.6675519712066 243.97021500086046,374.6675519712066 231.97021500086046,362.6675519712066" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="336.5894277382748,74.98596752460023 345.5894277382748,83.98596752460023 336.5894277382748,92.98596752460023 327.5894277382748,83.98596752460023" fill="hsl(124 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">SCOOBY-DOO</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❂ PLACEHOLDER SUP-BARRIERE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

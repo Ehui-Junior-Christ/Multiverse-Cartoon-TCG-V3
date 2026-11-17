@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Sceau du Ciel">
+  <defs>
+    <radialGradient id="bg" cx="53%" cy="38%" r="85%">
+      <stop offset="0%" stop-color="hsl(124 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(96 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(96 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(124 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(124 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="264" cy="235.52" r="166" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="264" cy="235.52" r="208" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="264" cy="235.52" r="250" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="264" cy="235.52" r="76.88" fill="rgba(8,10,26,0.42)" stroke="hsl(124 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="264" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="64.48" font-weight="700" fill="hsl(124 96% 78%)" opacity="0.92">SD</text>
+  <polygon points="367.04611337926417,310.91989824893346 374.04611337926417,317.91989824893346 367.04611337926417,324.91989824893346 360.04611337926417,317.91989824893346" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="244.34864890568113,363.13848375704947 251.34864890568113,370.13848375704947 244.34864890568113,377.13848375704947 237.34864890568113,370.13848375704947" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="384.90986577333604,362.5731035803966 391.90986577333604,369.5731035803966 384.90986577333604,376.5731035803966 377.90986577333604,369.5731035803966" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="106.39066231663153,75.273857895209 121.39066231663153,90.273857895209 106.39066231663153,105.273857895209 91.39066231663153,90.273857895209" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="412.03430117450114,193.95732998701118 423.03430117450114,204.95732998701118 412.03430117450114,215.95732998701118 401.03430117450114,204.95732998701118" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="401.49449590440406,318.8352980180598 410.49449590440406,327.8352980180598 401.49449590440406,336.8352980180598 392.49449590440406,327.8352980180598" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="434.0618663724131,124.77682846770352 442.0618663724131,132.77682846770352 434.0618663724131,140.77682846770352 426.0618663724131,132.77682846770352" fill="hsl(124 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">SCOOBY-DOO</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❂ PLACEHOLDER TRAP-X007</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

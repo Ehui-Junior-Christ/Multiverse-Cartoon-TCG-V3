@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Équipe Technique">
+  <defs>
+    <radialGradient id="bg" cx="60%" cy="35%" r="85%">
+      <stop offset="0%" stop-color="hsl(292 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(264 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(264 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(292 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(292 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="281" cy="235.52" r="155" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="281" cy="235.52" r="197" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="281" cy="235.52" r="239" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="281" cy="235.52" r="70.06" fill="rgba(8,10,26,0.42)" stroke="hsl(292 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="281" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="58.760000000000005" font-weight="700" fill="hsl(292 96% 78%)" opacity="0.92">ÉT</text>
+  <polygon points="410.602013546241,271.0327762288224 418.602013546241,279.0327762288224 410.602013546241,287.0327762288224 402.602013546241,279.0327762288224" fill="hsl(292 96% 78%)" opacity="0.18" /><polygon points="412.5366341094988,135.24599552562714 427.5366341094988,150.24599552562714 412.5366341094988,165.24599552562714 397.5366341094988,150.24599552562714" fill="hsl(292 96% 78%)" opacity="0.26" /><polygon points="444.97779786742086,312.1263538082913 463.97779786742086,331.1263538082913 444.97779786742086,350.1263538082913 425.97779786742086,331.1263538082913" fill="hsl(292 96% 78%)" opacity="0.33999999999999997" /><polygon points="525.403192313657,226.82504196846372 546.403192313657,247.82504196846372 525.403192313657,268.8250419684637 504.403192313657,247.82504196846372" fill="hsl(292 96% 78%)" opacity="0.18" /><polygon points="281,316.48 303,338.48 281,360.48 259,338.48" fill="hsl(292 96% 78%)" opacity="0.26" /><polygon points="247.22680781835157,338.6185682585703 269.2268078183516,360.6185682585703 247.22680781835157,382.6185682585703 225.22680781835157,360.6185682585703" fill="hsl(292 96% 78%)" opacity="0.33999999999999997" /><polygon points="74.61085624516701,189.934055930966 88.61085624516701,203.934055930966 74.61085624516701,217.934055930966 60.610856245167014,203.934055930966" fill="hsl(292 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">TEEN TITANS</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✦ PLACEHOLDER SUP-EQUIPE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

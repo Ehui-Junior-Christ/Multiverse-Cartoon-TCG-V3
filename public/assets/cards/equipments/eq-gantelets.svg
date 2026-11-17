@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Gantelets Renforcés">
+  <defs>
+    <radialGradient id="bg" cx="36%" cy="41%" r="85%">
+      <stop offset="0%" stop-color="hsl(176 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(148 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(148 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(176 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(176 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="287" cy="235.52" r="165" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="287" cy="235.52" r="207" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="287" cy="235.52" r="249" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="287" cy="235.52" r="76.26" fill="rgba(8,10,26,0.42)" stroke="hsl(176 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="287" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="63.96" font-weight="700" fill="hsl(176 96% 78%)" opacity="0.92">GR</text>
+  <polygon points="289.67021818490434,111.37677790157196 303.67021818490434,125.37677790157196 289.67021818490434,139.37677790157196 275.67021818490434,125.37677790157196" fill="hsl(176 96% 78%)" opacity="0.18" /><polygon points="325.879486182921,349.2177929627996 343.879486182921,367.2177929627996 325.879486182921,385.2177929627996 307.879486182921,367.2177929627996" fill="hsl(176 96% 78%)" opacity="0.26" /><polygon points="108.20724424313664,309.04838934477834 128.20724424313664,329.04838934477834 108.20724424313664,349.04838934477834 88.20724424313664,329.04838934477834" fill="hsl(176 96% 78%)" opacity="0.33999999999999997" /><polygon points="529.5194116552641,279.2555201672404 542.5194116552641,292.2555201672404 529.5194116552641,305.2555201672404 516.5194116552641,292.2555201672404" fill="hsl(176 96% 78%)" opacity="0.18" /><polygon points="175.10288365226694,300.64893934448486 185.10288365226694,310.64893934448486 175.10288365226694,320.64893934448486 165.10288365226694,310.64893934448486" fill="hsl(176 96% 78%)" opacity="0.26" /><polygon points="341.67350878315176,98.76312765713692 349.67350878315176,106.76312765713692 341.67350878315176,114.76312765713692 333.67350878315176,106.76312765713692" fill="hsl(176 96% 78%)" opacity="0.33999999999999997" /><polygon points="504.642513415698,200.88910196963803 511.642513415698,207.88910196963803 504.642513415698,214.88910196963803 497.642513415698,207.88910196963803" fill="hsl(176 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">BEN 10</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">⌬ PLACEHOLDER EQ-GANTELETS</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

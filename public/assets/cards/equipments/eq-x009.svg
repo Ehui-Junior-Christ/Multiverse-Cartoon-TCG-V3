@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Spirale solaire">
+  <defs>
+    <radialGradient id="bg" cx="48%" cy="33%" r="85%">
+      <stop offset="0%" stop-color="hsl(176 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(148 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(148 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(176 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(176 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="219" cy="235.52" r="165" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="219" cy="235.52" r="207" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="219" cy="235.52" r="249" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="219" cy="235.52" r="76.26" fill="rgba(8,10,26,0.42)" stroke="hsl(176 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="219" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="63.96" font-weight="700" fill="hsl(176 96% 78%)" opacity="0.92">SS</text>
+  <polygon points="253.41751131461132,118.1833936632585 263.4175113146113,128.1833936632585 253.41751131461132,138.1833936632585 243.41751131461132,128.1833936632585" fill="hsl(176 96% 78%)" opacity="0.18" /><polygon points="34.840950186717095,242.89999064107553 50.840950186717095,258.89999064107553 34.840950186717095,274.89999064107553 18.840950186717095,258.89999064107553" fill="hsl(176 96% 78%)" opacity="0.26" /><polygon points="308.88879811975187,369.88335322009067 319.88879811975187,380.88335322009067 308.88879811975187,391.88335322009067 297.88879811975187,380.88335322009067" fill="hsl(176 96% 78%)" opacity="0.33999999999999997" /><polygon points="254.4891407448167,44.70678257904768 263.4891407448167,53.70678257904768 254.4891407448167,62.70678257904768 245.4891407448167,53.70678257904768" fill="hsl(176 96% 78%)" opacity="0.18" /><polygon points="369.1889590674926,198.50048106931985 385.1889590674926,214.50048106931985 369.1889590674926,230.50048106931985 353.1889590674926,214.50048106931985" fill="hsl(176 96% 78%)" opacity="0.26" /><polygon points="32.1139153474291,229.21886823602478 43.1139153474291,240.21886823602478 32.1139153474291,251.21886823602478 21.1139153474291,240.21886823602478" fill="hsl(176 96% 78%)" opacity="0.33999999999999997" /><polygon points="132.64842060387048,80.04926771864771 141.64842060387048,89.04926771864771 132.64842060387048,98.04926771864771 123.64842060387048,89.04926771864771" fill="hsl(176 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">BEN 10</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">⌬ PLACEHOLDER EQ-X009</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

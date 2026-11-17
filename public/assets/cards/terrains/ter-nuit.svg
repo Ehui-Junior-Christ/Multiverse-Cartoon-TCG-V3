@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="288" viewBox="0 0 512 288" role="img" aria-label="Illustration placeholder de Nuit du Dessin Animé">
+  <defs>
+    <radialGradient id="bg" cx="58%" cy="43%" r="85%">
+      <stop offset="0%" stop-color="hsl(242 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(214 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(214 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(242 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(242 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="288" fill="url(#bg)" />
+  <rect width="512" height="288" fill="url(#dots)" />
+  <rect width="512" height="288" fill="url(#halo)" />
+  <circle cx="289" cy="132.48000000000002" r="141" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="289" cy="132.48000000000002" r="183" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="289" cy="132.48000000000002" r="225" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="289" cy="132.48000000000002" r="61.38" fill="rgba(8,10,26,0.42)" stroke="hsl(242 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="289" y="158.48000000000002" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="51.480000000000004" font-weight="700" fill="hsl(242 96% 78%)" opacity="0.92">ND</text>
+  <polygon points="238.5956844248837,201.97649078866266 254.5956844248837,217.97649078866266 238.5956844248837,233.97649078866266 222.5956844248837,217.97649078866266" fill="hsl(242 96% 78%)" opacity="0.18" /><polygon points="149.2817299855557,181.924868471444 160.2817299855557,192.924868471444 149.2817299855557,203.924868471444 138.2817299855557,192.924868471444" fill="hsl(242 96% 78%)" opacity="0.26" /><polygon points="228.1236521081354,250.3778562713046 245.1236521081354,267.3778562713046 228.1236521081354,284.3778562713046 211.1236521081354,267.3778562713046" fill="hsl(242 96% 78%)" opacity="0.33999999999999997" /><polygon points="63.920515034610645,83.06614064152839 75.92051503461064,95.06614064152839 63.920515034610645,107.06614064152839 51.920515034610645,95.06614064152839" fill="hsl(242 96% 78%)" opacity="0.18" /><polygon points="406.8473640358955,161.25769940888034 415.8473640358955,170.25769940888034 406.8473640358955,179.25769940888034 397.8473640358955,170.25769940888034" fill="hsl(242 96% 78%)" opacity="0.26" /><polygon points="167.86739344718475,195.00916796227563 183.86739344718475,211.00916796227563 167.86739344718475,227.00916796227563 151.86739344718475,211.00916796227563" fill="hsl(242 96% 78%)" opacity="0.33999999999999997" /><polygon points="115.05932420679139,180.06984646555077 134.0593242067914,199.06984646555077 115.05932420679139,218.06984646555077 96.05932420679139,199.06984646555077" fill="hsl(242 96% 78%)" opacity="0.18" />
+  <text x="256" y="246" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">LOONEY TUNES</text>
+  <text x="256" y="270" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✺ PLACEHOLDER TER-NUIT</text>
+  <rect width="512" height="288" fill="url(#floor)" />
+</svg>

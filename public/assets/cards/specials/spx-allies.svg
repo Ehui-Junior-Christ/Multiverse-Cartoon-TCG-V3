@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Crossover : Alliés Improbables">
+  <defs>
+    <radialGradient id="bg" cx="56%" cy="31%" r="85%">
+      <stop offset="0%" stop-color="hsl(42 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(14 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(14 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(42 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(42 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="217" cy="235.52" r="181" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="217" cy="235.52" r="223" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="217" cy="235.52" r="265" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="217" cy="235.52" r="86.17999999999999" fill="rgba(8,10,26,0.42)" stroke="hsl(42 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="217" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="72.28" font-weight="700" fill="hsl(42 96% 78%)" opacity="0.92">CA</text>
+  <polygon points="59.224907921972914,183.91378789932787 67.22490792197291,191.91378789932787 59.224907921972914,199.91378789932787 51.224907921972914,191.91378789932787" fill="hsl(42 96% 78%)" opacity="0.18" /><polygon points="26.242397980460623,278.50966414847977 33.24239798046062,285.50966414847977 26.242397980460623,292.50966414847977 19.242397980460623,285.50966414847977" fill="hsl(42 96% 78%)" opacity="0.26" /><polygon points="431.7949455276861,156.4044198165671 438.7949455276861,163.4044198165671 431.7949455276861,170.4044198165671 424.7949455276861,163.4044198165671" fill="hsl(42 96% 78%)" opacity="0.33999999999999997" /><polygon points="12.473703759628762,92.5097622633723 27.473703759628762,107.5097622633723 12.473703759628762,122.5097622633723 -2.526296240371238,107.5097622633723" fill="hsl(42 96% 78%)" opacity="0.18" /><polygon points="367.5801025878342,271.761564008308 386.5801025878342,290.761564008308 367.5801025878342,309.761564008308 348.5801025878342,290.761564008308" fill="hsl(42 96% 78%)" opacity="0.26" /><polygon points="227.62419911731763,68.5603072002715 248.62419911731763,89.5603072002715 227.62419911731763,110.5603072002715 206.62419911731763,89.5603072002715" fill="hsl(42 96% 78%)" opacity="0.33999999999999997" /><polygon points="84.47128187743303,354.98697138079234 106.47128187743303,376.98697138079234 84.47128187743303,398.98697138079234 62.47128187743303,376.98697138079234" fill="hsl(42 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">TOM &amp; JERRY</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✷ PLACEHOLDER SPX-ALLIES</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Armure de Plot">
+  <defs>
+    <radialGradient id="bg" cx="53%" cy="48%" r="85%">
+      <stop offset="0%" stop-color="hsl(124 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(96 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(96 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(124 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(124 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="254" cy="235.52" r="178" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="254" cy="235.52" r="220" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="254" cy="235.52" r="262" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="254" cy="235.52" r="84.32" fill="rgba(8,10,26,0.42)" stroke="hsl(124 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="254" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="70.72" font-weight="700" fill="hsl(124 96% 78%)" opacity="0.92">AD</text>
+  <polygon points="377.36204102924745,142.5455099279893 390.36204102924745,155.5455099279893 377.36204102924745,168.5455099279893 364.36204102924745,155.5455099279893" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="233.09430734646932,82.30884706696867 243.09430734646932,92.30884706696867 233.09430734646932,102.30884706696867 223.09430734646932,92.30884706696867" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="57.751087100770775,135.75921538066825 65.75108710077077,143.75921538066825 57.751087100770775,151.75921538066825 49.751087100770775,143.75921538066825" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="136.51653266052722,393.95129917388726 151.51653266052722,408.95129917388726 136.51653266052722,423.95129917388726 121.51653266052722,408.95129917388726" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="168.50367956493096,122.07136422008358 179.50367956493096,133.07136422008358 168.50367956493096,144.07136422008358 157.50367956493096,133.07136422008358" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="79.07605857212084,148.7074146845275 96.07605857212084,165.7074146845275 79.07605857212084,182.7074146845275 62.07605857212084,165.7074146845275" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="475.25134669024015,168.66827733705824 487.25134669024015,180.66827733705824 475.25134669024015,192.66827733705824 463.25134669024015,180.66827733705824" fill="hsl(124 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">SCOOBY-DOO</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❂ PLACEHOLDER EQ-ARMURE</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Bouclier Loufoque">
+  <defs>
+    <radialGradient id="bg" cx="40%" cy="45%" r="85%">
+      <stop offset="0%" stop-color="hsl(242 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(214 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(214 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(242 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(242 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="291" cy="235.52" r="161" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="291" cy="235.52" r="203" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="291" cy="235.52" r="245" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="291" cy="235.52" r="73.78" fill="rgba(8,10,26,0.42)" stroke="hsl(242 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="291" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="61.88" font-weight="700" fill="hsl(242 96% 78%)" opacity="0.92">BL</text>
+  <polygon points="155.96013973153916,262.85848711954225 173.96013973153916,280.85848711954225 155.96013973153916,298.85848711954225 137.96013973153916,280.85848711954225" fill="hsl(242 96% 78%)" opacity="0.18" /><polygon points="464.02989933467495,258.41686003127495 484.02989933467495,278.41686003127495 464.02989933467495,298.41686003127495 444.02989933467495,278.41686003127495" fill="hsl(242 96% 78%)" opacity="0.26" /><polygon points="132.29624674864002,329.07542377616477 145.29624674864002,342.07542377616477 132.29624674864002,355.07542377616477 119.29624674864002,342.07542377616477" fill="hsl(242 96% 78%)" opacity="0.33999999999999997" /><polygon points="217.61470211459311,390.3433954976398 235.61470211459311,408.3433954976398 217.61470211459311,426.3433954976398 199.61470211459311,408.3433954976398" fill="hsl(242 96% 78%)" opacity="0.18" /><polygon points="212.04202962925245,132.54140024433866 224.04202962925245,144.54140024433866 212.04202962925245,156.54140024433866 200.04202962925245,144.54140024433866" fill="hsl(242 96% 78%)" opacity="0.26" /><polygon points="240.5583638854892,99.86415894316713 249.5583638854892,108.86415894316713 240.5583638854892,117.86415894316713 231.5583638854892,108.86415894316713" fill="hsl(242 96% 78%)" opacity="0.33999999999999997" /><polygon points="501.5541726018912,181.72212303150792 517.5541726018912,197.72212303150792 501.5541726018912,213.72212303150792 485.5541726018912,197.72212303150792" fill="hsl(242 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">LOONEY TUNES</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✺ PLACEHOLDER TEC-BOUCLIER</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

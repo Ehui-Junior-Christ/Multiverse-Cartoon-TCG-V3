@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MULTIVERSE CARTOON TCG — Aperçu</title>
+<style>
+  :root{
+    --gold:#e6c377; --gold-bright:#ffe9b0; --cyan:#7ee7ff; --violet:#a78bfa;
+    --atk:#ff6b7a; --def:#58b8ff; --ok:#5ee0a0; --warn:#ffc978;
+    --text:#e8ecff; --muted:#9aa6c9; --line:rgba(150,170,255,.14); --line-strong:rgba(230,195,119,.38);
+    --font-display:'Bricolage Grotesque','Trebuchet MS',sans-serif;
+    --font-ui:'Chakra Petch','Segoe UI',sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#05060d;color:var(--text);font-family:var(--font-ui);overflow-x:hidden}
+  .bg{position:fixed;inset:0;z-index:-1;background:
+    radial-gradient(1100px 700px at 12% -10%,rgba(86,64,170,.42),transparent 62%),
+    radial-gradient(900px 620px at 100% 0%,rgba(20,120,160,.32),transparent 58%),
+    radial-gradient(760px 520px at 50% 110%,rgba(180,60,120,.2),transparent 60%),
+    linear-gradient(180deg,#06070f,#070a17 45%,#05060d)}
+  .vig{position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+    radial-gradient(120% 90% at 50% 0%,transparent 55%,rgba(0,0,0,.55) 100%),
+    radial-gradient(120% 80% at 50% 100%,transparent 55%,rgba(0,0,0,.6) 100%)}
+  h1,h2{font-family:var(--font-display);margin:0}
+
+  /* ---------------- LOADER ---------------- */
+  .loader{position:fixed;inset:0;z-index:100;display:grid;place-items:center;overflow:hidden;
+    background:
+      radial-gradient(1200px 700px at 50% 118%,rgba(255,150,80,.45),transparent 62%),
+      radial-gradient(900px 520px at 78% 8%,rgba(255,196,112,.3),transparent 60%),
+      linear-gradient(180deg,#2a1d47,#4a2a55 38%,#8a3f5c 66%,#d4703f);
+    transition:opacity .5s ease,visibility .5s}
+  .loader.is-hidden{opacity:0;visibility:hidden}
+  .loader::before{content:'';position:absolute;inset:0;background-image:
+    radial-gradient(1.4px 1.4px at 10% 20%,#fff,transparent),
+    radial-gradient(1.2px 1.2px at 25% 12%,#ffe9b0,transparent),
+    radial-gradient(1px 1px at 78% 22%,#fff,transparent),
+    radial-gradient(1.3px 1.3px at 62% 10%,#ffd59a,transparent),
+    radial-gradient(1px 1px at 88% 40%,#fff,transparent),
+    radial-gradient(1.2px 1.2px at 42% 6%,#fff,transparent),
+    radial-gradient(1px 1px at 15% 55%,#ffe9b0,transparent);opacity:.75}
+  .loader__ring{position:absolute;left:50%;top:34%;width:min(720px,82vw);height:min(720px,82vw);
+    transform:translate(-50%,-50%) rotate(-14deg);border-radius:50%;
+    background:conic-gradient(from 210deg,transparent 0 40%,rgba(126,231,255,.5) 46%,rgba(167,139,250,.5) 54%,rgba(255,122,182,.35) 62%,transparent 70%);
+    filter:blur(22px);animation:spin 10s linear infinite}
+  @keyframes spin{to{transform:translate(-50%,-50%) rotate(346deg)}}
+  .loader__content{position:relative;z-index:2;display:grid;justify-items:center;gap:22px;width:min(760px,90vw);text-align:center}
+  .logo{display:grid;justify-items:center;line-height:.86;filter:drop-shadow(0 14px 34px rgba(0,0,0,.55))}
+  .logo__line{font-family:var(--font-display);font-weight:800;font-size:clamp(38px,8vw,88px);letter-spacing:-.02em;
+    color:#cfe9ff;-webkit-text-stroke:clamp(2px,.5vw,5px) #0a1a3a;text-shadow:0 8px 0 rgba(10,20,50,.55);transform:skewX(-6deg)}
+  .logo__line--gold{color:#ffcb3d;-webkit-text-stroke:clamp(2px,.5vw,5px) #6b2c00;text-shadow:0 8px 0 rgba(80,30,0,.5)}
+  .logo__badge{margin-top:.28em;padding:.16em .7em;border-radius:10px;border:2px solid #7ce3a0;
+    background:linear-gradient(180deg,#1f6b45,#0d3d27);color:#d9ffe9;font-family:var(--font-display);
+    font-weight:800;font-size:clamp(15px,2.4vw,26px);letter-spacing:.32em;transform:skewX(-6deg)}
+  .loader__label{margin:0;font-family:var(--font-display);font-weight:800;font-size:clamp(22px,3.6vw,40px);color:#fff;
+    text-shadow:0 4px 0 rgba(60,20,60,.55),0 10px 24px rgba(0,0,0,.5)}
+  .loader__bar{display:flex;align-items:center;gap:10px;width:100%}
+  .loader__star{font-size:clamp(30px,4.6vw,52px);line-height:1;color:#ffd451;-webkit-text-stroke:3px #7a4300;
+    filter:drop-shadow(0 6px 14px rgba(255,180,40,.55));animation:star 1.8s ease-in-out infinite}
+  @keyframes star{0%,100%{transform:rotate(-6deg) scale(1)}50%{transform:rotate(6deg) scale(1.06)}}
+  .loader__track{position:relative;flex:1;height:clamp(20px,3vw,34px);border-radius:999px;border:2px solid #1a1a2a;
+    background:#0d0d18;box-shadow:inset 0 4px 12px rgba(0,0,0,.8),0 4px 0 rgba(0,0,0,.4);overflow:hidden}
+  .loader__fill{height:100%;border-radius:999px;background:linear-gradient(180deg,#ffe98a,#ffc21f 55%,#e08a00);
+    box-shadow:0 0 18px rgba(255,200,60,.8);transition:width .22s ease}
+  .loader__pct{font-family:var(--font-display);font-weight:800;font-size:clamp(16px,2.4vw,26px);color:#fff;min-width:4ch}
+  .loader__tip{display:flex;align-items:center;gap:14px;width:100%;padding:12px 18px;border-radius:14px;
+    border:2px solid #c9a227;background:linear-gradient(180deg,rgba(20,14,6,.94),rgba(32,22,8,.94));text-align:left}
+  .loader__tip p{margin:0;font-size:clamp(12px,1.6vw,16px);line-height:1.5;color:#ffeccb}
+  .loader__tip b{color:#ffd75e}
+
+  /* ---------------- HUD ---------------- */
+  .hud{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:clamp(10px,1.4vw,20px);
+    padding:8px clamp(12px,2vw,26px);
+    background:linear-gradient(180deg,rgba(10,12,28,.98),rgba(7,9,20,.9) 70%,rgba(7,9,20,.55));
+    border-bottom:2px solid rgba(230,195,119,.35);box-shadow:0 14px 34px rgba(0,0,0,.55);backdrop-filter:blur(14px)}
+  .hud__logo{display:grid;justify-items:center;line-height:.84;padding:4px 12px 6px;border-radius:12px;
+    background:linear-gradient(180deg,rgba(30,20,60,.95),rgba(12,10,26,.95));
+    border:2px solid rgba(167,139,250,.5);box-shadow:0 0 22px rgba(167,139,250,.3),inset 0 0 18px rgba(126,231,255,.1);
+    transform:skewX(-5deg);text-decoration:none}
+  .hud__logo-top,.hud__logo-bottom{font-family:var(--font-display);font-weight:800}
+  .hud__logo-top{font-size:15px;color:#cfe9ff;-webkit-text-stroke:1.2px #0a1a3a}
+  .hud__logo-bottom{font-size:15px;color:#ffcb3d;-webkit-text-stroke:1.2px #6b2c00}
+  .hud__logo-tcg{font-family:var(--font-display);font-size:8px;font-weight:800;letter-spacing:.34em;color:#d9ffe9;
+    padding:1px 6px;margin-top:3px;border-radius:4px;border:1px solid #4f9a6a;background:linear-gradient(180deg,#1f6b45,#0d3d27)}
+  .hud__player{display:flex;align-items:center;gap:9px;padding:5px 12px 5px 6px;border-radius:999px;
+    border:1px solid var(--line);background:linear-gradient(180deg,rgba(30,36,70,.8),rgba(12,16,34,.8))}
+  .hud__avatar{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;
+    border:2px solid rgba(230,195,119,.6);background:radial-gradient(circle at 32% 24%,#4b3a7a,#151030);
+    color:var(--gold-bright);font-family:var(--font-display);font-weight:800;font-size:12px;
+    box-shadow:0 0 14px rgba(230,195,119,.28)}
+  .hud__ident{display:grid;gap:3px}
+  .hud__name{font-family:var(--font-display);font-size:13px}
+  .hud__xp{display:flex;align-items:center;gap:6px;font-size:9.5px;color:var(--muted);white-space:nowrap}
+  .hud__xpbar{width:clamp(52px,8vw,96px);height:6px;border-radius:999px;background:#0a0c18;
+    border:1px solid rgba(255,255,255,.14);overflow:hidden}
+  .hud__xpbar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#ffe98a,#ff9f1a)}
+  .hud__res{display:flex;gap:6px;flex-wrap:wrap}
+  .hud__res-item{display:inline-flex;align-items:center;gap:5px;padding:6px 11px;border-radius:999px;
+    border:1px solid var(--line);background:rgba(255,255,255,.04);font-size:11.5px;font-weight:700;white-space:nowrap}
+  .hud__res-item--jm{color:#c8b6ff;border-color:rgba(167,139,250,.45)}
+  .hud__res-item--cards{color:var(--cyan);border-color:rgba(126,231,255,.45)}
+  .hud__nav{display:flex;gap:5px;margin-left:auto;flex-wrap:wrap}
+  .hud__tab{display:inline-flex;align-items:center;gap:6px;padding:8px 13px;border-radius:10px;border:1px solid transparent;
+    font-size:12px;font-weight:600;letter-spacing:.05em;color:var(--muted);text-decoration:none;transition:.16s}
+  .hud__tab:hover{color:var(--text);background:rgba(255,255,255,.05);border-color:var(--line)}
+  .hud__tab.active{color:var(--gold-bright);border-color:var(--line-strong);
+    background:linear-gradient(180deg,rgba(230,195,119,.2),rgba(230,195,119,.06));box-shadow:inset 0 -2px 0 var(--gold)}
+  .hud__tab--play{color:#3a1c00;border-color:#7a4300;background:linear-gradient(180deg,#ffe98a,#ffc21f 55%,#ff9f1a);
+    box-shadow:0 3px 0 #7a4300}
+  .hud__icon{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;border:1px solid var(--line);
+    background:rgba(255,255,255,.04);color:var(--muted);cursor:pointer}
+
+  /* ---------------- SCÈNE ---------------- */
+  .stage{max-width:1760px;margin:0 auto;padding:clamp(10px,1.4vw,18px) clamp(10px,1.8vw,26px) 28px;display:grid;gap:14px}
+  .panel{border-radius:16px;border:1px solid var(--line);
+    background:linear-gradient(180deg,rgba(20,25,52,.86),rgba(9,12,26,.92));box-shadow:0 24px 60px rgba(0,0,0,.55)}
+  .home__stage{position:relative;display:grid;grid-template-columns:180px minmax(0,1fr) minmax(0,.92fr);
+    gap:clamp(14px,2vw,26px);align-items:center;padding:clamp(18px,2.6vw,34px);border-radius:22px;
+    border:2px solid rgba(230,195,119,.28);
+    background:
+      radial-gradient(120% 90% at 50% -10%,rgba(126,231,255,.12),transparent 58%),
+      radial-gradient(100% 80% at 50% 120%,rgba(167,139,250,.18),transparent 62%),
+      linear-gradient(180deg,rgba(14,18,42,.95),rgba(6,8,20,.97));
+    box-shadow:0 26px 70px rgba(0,0,0,.6),inset 0 0 0 1px rgba(255,255,255,.05),inset 0 0 90px rgba(126,231,255,.06)}
+  .home__stage::before,.home__stage::after{content:'';position:absolute;width:14px;height:14px;
+    border:2px solid rgba(230,195,119,.65);background:rgba(10,12,28,.9);transform:rotate(45deg)}
+  .home__stage::before{top:-8px;left:22px}
+  .home__stage::after{bottom:-8px;right:22px}
+  .home__menu{display:grid;gap:8px}
+  .home__menu a{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:10px;
+    border:1px solid var(--line);border-left:3px solid rgba(230,195,119,.35);
+    background:linear-gradient(90deg,rgba(255,255,255,.055),rgba(255,255,255,.015));
+    font-size:13px;font-weight:700;color:inherit;text-decoration:none;transition:.18s}
+  .home__menu a:hover,.home__menu a.active{border-color:var(--line-strong);border-left-color:var(--gold);
+    background:linear-gradient(90deg,rgba(230,195,119,.18),rgba(230,195,119,.03));transform:translateX(3px)}
+  .home__menu i{display:grid;place-items:center;width:26px;height:26px;border-radius:8px;
+    background:rgba(230,195,119,.14);color:var(--gold-bright);font-style:normal;font-size:13px}
+  .center{display:grid;justify-items:center;gap:14px;text-align:center}
+  .logo--home .logo__line{font-size:clamp(30px,4.6vw,56px);-webkit-text-stroke:clamp(1.5px,.35vw,3px) #0a1a3a}
+  .logo--home .logo__badge{font-size:clamp(12px,1.6vw,18px)}
+  .setup{display:grid;justify-items:center;gap:8px;width:min(420px,100%)}
+  .setup select{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);
+    background:#0b0f22;color:var(--text);font-family:inherit}
+  .play{width:100%;padding:15px 28px;font-family:var(--font-display);font-size:clamp(20px,2.4vw,30px);font-weight:800;
+    letter-spacing:.08em;color:#3a1c00;border-radius:16px;border:3px solid #7a4300;cursor:pointer;
+    background:linear-gradient(180deg,#ffe98a,#ffc21f 52%,#ff9f1a);
+    box-shadow:0 8px 0 #7a4300,0 14px 30px rgba(0,0,0,.45);transform:skewX(-4deg);transition:.16s}
+  .play:hover{transform:skewX(-4deg) translateY(-2px);box-shadow:0 10px 0 #7a4300,0 18px 34px rgba(0,0,0,.5)}
+  .play:active{transform:skewX(-4deg) translateY(4px);box-shadow:0 3px 0 #7a4300,0 8px 18px rgba(0,0,0,.45)}
+  .welcome{margin:0;padding:8px 16px;border-radius:999px;border:1px solid var(--line);
+    background:rgba(6,8,18,.6);font-size:12.5px}
+  .fan{position:relative;display:flex;align-items:center;justify-content:center;min-height:280px;padding:8px 4px;overflow:hidden}
+  .fan .card{--w:150px;margin-left:-34px;transform:rotate(calc((var(--i) - 1) * 6deg)) translateY(calc((var(--i) - 1) * 5px));
+    transition:transform .3s,filter .3s;box-shadow:0 24px 50px rgba(0,0,0,.55)}
+  .fan .card:first-child{margin-left:0}
+  .fan .card:hover{transform:rotate(0) translateY(-10px) scale(1.04);z-index:4}
+
+  /* dash */
+  .dash{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+  .tile{display:flex;flex-direction:column}
+  .phead{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line)}
+  .phead h2{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-bright)}
+  .pbody{padding:16px 18px;flex:1}
+  .chip{display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border-radius:999px;font-size:11px;
+    letter-spacing:.09em;text-transform:uppercase;border:1px solid var(--line);background:rgba(255,255,255,.03);
+    color:var(--muted);white-space:nowrap}
+  .chip--gold{color:var(--gold-bright);border-color:var(--line-strong)}
+  .chip--ok{color:var(--ok);border-color:rgba(94,224,160,.4)}
+  .deckname{font-family:var(--font-display);font-size:20px;margin:0 0 12px}
+  .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .deckstat{padding:10px 12px;border-radius:11px;border:1px solid var(--line);background:rgba(255,255,255,.025);
+    display:flex;justify-content:space-between;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .deckstat b{font-family:var(--font-display);font-size:16px;color:var(--text)}
+  .matches{margin:0;padding:0;list-style:none;display:grid;gap:7px}
+  .match{display:grid;grid-template-columns:8px minmax(0,1fr) auto 22px;align-items:center;gap:9px;
+    padding:8px 10px;border-radius:9px;border:1px solid var(--line);background:rgba(255,255,255,.025);font-size:12px}
+  .dot{width:8px;height:8px;border-radius:50%}
+  .dot.is-win{background:var(--ok);box-shadow:0 0 8px var(--ok)}
+  .dot.is-loss{background:var(--atk);box-shadow:0 0 8px var(--atk)}
+  .mturns{color:var(--muted);font-size:11px}
+  .is-win{color:var(--ok)}.is-loss{color:var(--atk)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:9px 16px;border-radius:11px;
+    border:1px solid var(--line-strong);background:rgba(230,195,119,.1);color:var(--gold-bright);
+    font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    cursor:pointer;text-decoration:none}
+  .btn--sm{padding:7px 13px;font-size:11px}
+  .extra-row{display:flex;align-items:center;gap:14px}
+  .extra-row .card{--w:96px}
+
+  /* tabs */
+  .tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .tab{display:flex;flex-direction:column;align-items:center;gap:5px;padding:12px;border-radius:14px;border:1px solid var(--line);
+    background:rgba(255,255,255,.03);font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--muted);text-decoration:none;transition:.18s}
+  .tab:hover{border-color:var(--line-strong);background:rgba(230,195,119,.08);color:var(--gold-bright)}
+  .tab i{font-size:20px;font-style:normal}
+
+  /* ---------------- CARTES ---------------- */
+  .card{position:relative;width:var(--w,200px);aspect-ratio:5/7;container-type:inline-size;border-radius:12px;
+    cursor:pointer;flex:0 0 auto;transition:transform .2s,filter .2s}
+  .card__frame{position:absolute;inset:0;display:flex;flex-direction:column;gap:1.7cqw;padding:3cqw;border-radius:3.4cqw;
+    border:1px solid var(--frame-2,#6b768e);overflow:hidden;
+    background:linear-gradient(165deg,color-mix(in srgb,var(--frame-1,#2a3244) 92%,#000) 0%,rgba(7,9,20,.97) 46%),#070912;
+    box-shadow:0 12px 26px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.05),0 0 24px var(--frame-glow,rgba(120,150,220,.14))}
+  .card__frame::before{content:'';position:absolute;inset:0;background:radial-gradient(120% 60% at 50% -10%,rgba(255,255,255,.16),transparent 60%);pointer-events:none}
+  .card.rarity-common{--frame-1:#3b4455;--frame-2:#8b9ab3;--frame-glow:rgba(150,170,200,.16)}
+  .card.rarity-rare{--frame-1:#0d4c63;--frame-2:#67e8f9;--frame-glow:rgba(103,232,249,.3)}
+  .card.rarity-epic{--frame-1:#3b2a7a;--frame-2:#c4b5fd;--frame-glow:rgba(167,139,250,.34)}
+  .card.rarity-legendary{--frame-1:#6b4310;--frame-2:#fbbf24;--frame-glow:rgba(251,191,36,.34)}
+  .card.rarity-ultra{--frame-1:#6d3410;--frame-2:#ffe9b0;--frame-glow:rgba(255,233,176,.42)}
+  .card.rarity-ultra .card__frame{background:linear-gradient(150deg,#4b2a11 0%,#131326 42%,#143048 100%),#070912}
+  .card__top{display:flex;align-items:center;gap:1.4cqw;position:relative}
+  .card__cost{display:grid;place-items:center;width:13cqw;height:13cqw;border-radius:50%;
+    border:.7cqw solid color-mix(in srgb,var(--frame-2) 70%,#fff);
+    background:radial-gradient(circle at 34% 26%,#fff 0%,#cfe3ff 42%,#7fa7db 100%);
+    color:#0b1830;font-family:var(--font-display);font-weight:800;font-size:7.4cqw;line-height:1;
+    box-shadow:0 4px 12px rgba(0,0,0,.5),inset 0 -2px 6px rgba(0,0,0,.2)}
+  .card__rarity{margin-left:auto;display:grid;place-items:center;min-width:11cqw;height:11cqw;padding:0 1.4cqw;
+    border-radius:2.2cqw;font-family:var(--font-display);font-size:5.4cqw;font-weight:800;color:#0b0d18;
+    background:linear-gradient(150deg,#fff6da,var(--frame-2));box-shadow:0 0 14px var(--frame-glow)}
+  .card__head{display:flex;flex-direction:column;gap:.4cqw;padding-bottom:1.2cqw;border-bottom:1px solid rgba(255,255,255,.14)}
+  .card__name{font-family:var(--font-display);font-weight:800;font-size:7cqw;line-height:1.03;
+    text-shadow:0 2px 10px rgba(0,0,0,.7);overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+  .card__sub{font-size:3.8cqw;letter-spacing:.1em;text-transform:uppercase;
+    color:color-mix(in srgb,var(--frame-2) 65%,#fff);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .card__artwrap{position:relative;flex:1 1 auto;min-height:0;border-radius:2cqw;overflow:hidden;
+    border:1px solid rgba(255,255,255,.14);background:#0a0f22}
+  .card__art{width:100%;height:100%;object-fit:cover;display:block}
+  .card__artwrap::after{content:'';position:absolute;inset:0;box-shadow:inset 0 -24px 34px rgba(3,5,14,.65);pointer-events:none}
+  .card__pop{position:absolute;left:1.6cqw;top:1.6cqw;display:flex;align-items:center;gap:1.2cqw;padding:1.1cqw 1.6cqw;
+    border-radius:1.6cqw;background:rgba(6,8,18,.78);border:1px solid rgba(230,195,119,.5);backdrop-filter:blur(3px)}
+  .card__pop span{font-size:3.4cqw;letter-spacing:.12em;color:var(--gold)}
+  .card__pop strong{font-family:var(--font-display);font-size:5.6cqw;line-height:1;color:#fff6da}
+  .card__type{flex:0 0 auto;padding:.9cqw 1.4cqw;border-radius:1.4cqw;border:1px solid rgba(255,255,255,.16);
+    background:linear-gradient(180deg,color-mix(in srgb,var(--frame-1) 80%,#000),rgba(4,6,16,.9));
+    font-size:3.8cqw;letter-spacing:.08em;text-transform:uppercase;text-align:center;
+    color:color-mix(in srgb,var(--frame-2) 60%,#fff);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .card__text{flex:0 1 auto;min-height:15%;max-height:30%;padding:1.8cqw 2cqw;border-radius:1.8cqw;font-size:4.9cqw;
+    line-height:1.24;color:#dfe6ff;background:rgba(4,6,16,.62);border:1px solid rgba(255,255,255,.09);overflow:hidden;
+    display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical}
+  .card__stats{display:flex;justify-content:space-between;gap:1.2cqw;padding-top:1cqw}
+  .pill{display:flex;align-items:baseline;gap:1cqw;padding:.8cqw 1.4cqw;border-radius:999px;border:1px solid rgba(0,0,0,.35)}
+  .pill i{font-style:normal;font-size:3.4cqw;letter-spacing:.1em;opacity:.82}
+  .pill b{font-family:var(--font-display);font-size:5.4cqw;line-height:1}
+  .pill--atk{background:linear-gradient(180deg,#ff8a94,#c8233c);color:#fff}
+  .pill--def{background:linear-gradient(180deg,#8fd2ff,#1e6fc4);color:#fff}
+  .card__signature{margin:0;font-size:3.5cqw;line-height:1.3;font-style:italic;text-align:center;
+    color:rgba(230,236,255,.6);overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+  .size-sm{--w:124px}
+  .size-md{--w:196px}
+  .size-lg{--w:min(360px,82vw)}
+  /* face-down */
+  .card--facedown .card__frame{padding:0;gap:0;border-color:rgba(230,195,119,.55);background:#0a0d1e;position:relative}
+  .card__back{display:block;width:100%;height:100%;object-fit:cover;border-radius:3cqw}
+  .card__back-label{position:absolute;left:50%;bottom:5%;transform:translateX(-50%);max-width:88%;padding:.6cqw 1.6cqw;
+    border-radius:999px;border:1px solid rgba(230,195,119,.4);background:rgba(4,6,16,.82);color:#ffd7a8;
+    font-size:3.2cqw;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+  /* --- Terrain : illustration panoramique --- */
+  .card--terrain .card__artwrap{flex:1.7 1 auto;border-radius:2.2cqw}
+  .card--terrain .card__text{max-height:26%;border-color:rgba(159,240,196,.3);
+    background:linear-gradient(180deg,rgba(6,20,14,.72),rgba(4,10,8,.72));color:#d8ffe9}
+  .card--terrain .card__stats{justify-content:center}
+  .card--terrain .pill--neutral{background:linear-gradient(180deg,rgba(94,224,160,.2),rgba(94,224,160,.06));
+    color:#ccffe4;border-color:rgba(94,224,160,.4)}
+
+  .sect{padding:18px}
+  .sect h2{font-size:15px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;color:var(--gold-bright)}
+  .row{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+  .caption{font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+  .board{display:grid;grid-template-columns:repeat(5,86px);gap:6px}
+  .slot{height:96px;border-radius:12px;background:radial-gradient(80% 80% at 50% 50%,rgba(126,231,255,.06),transparent 70%);padding:3px}
+  .slot .card{width:auto;height:100%;max-width:100%;aspect-ratio:5/7;margin:0 auto}
+  @media (max-width:1040px){.home__stage{grid-template-columns:1fr}.home__menu{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="vig"></div>
+
+<!-- ============ ÉCRAN DE CHARGEMENT ============ -->
+<div class="loader" id="loader">
+  <div class="loader__ring"></div>
+  <div class="loader__content">
+    <div class="logo">
+      <span class="logo__line">MULTIVERSE</span>
+      <span class="logo__line logo__line--gold">CARTOON</span>
+      <span class="logo__badge">TCG</span>
+    </div>
+    <p class="loader__label">Chargement…</p>
+    <div class="loader__bar">
+      <span class="loader__star" aria-hidden="true">★</span>
+      <div class="loader__track"><div class="loader__fill" id="fill" style="width:0%"></div></div>
+      <b class="loader__pct" id="pct">0%</b>
+    </div>
+    <div class="loader__tip">
+      <span style="font-size:26px">💡</span>
+      <p><b>Astuce :</b> Utilise les 5 systèmes d'invocation pour surprendre ton adversaire !</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HUD ============ -->
+<header class="hud">
+  <a class="hud__logo" href="#">
+    <span class="hud__logo-top">MULTIVERSE</span>
+    <span class="hud__logo-bottom">CARTOON</span>
+    <span class="hud__logo-tcg">TCG</span>
+  </a>
+  <div class="hud__player">
+    <div class="hud__avatar">SA</div>
+    <div class="hud__ident">
+      <b class="hud__name">JuniorEhui</b>
+      <div class="hud__xp"><span>Niv. 12</span><div class="hud__xpbar"><i style="width:48%"></i></div><span>480 / 1000</span></div>
+    </div>
+  </div>
+  <div class="hud__res">
+    <span class="hud__res-item hud__res-item--jm">◆ 2 450</span>
+    <span class="hud__res-item hud__res-item--cards">▦ 120</span>
+  </div>
+  <nav class="hud__nav">
+    <a class="hud__tab active" href="#">⌂ Accueil</a>
+    <a class="hud__tab" href="#">▦ Collection</a>
+    <a class="hud__tab" href="#">⌘ Decks</a>
+    <a class="hud__tab hud__tab--play" href="#">⚔ Duel</a>
+    <a class="hud__tab" href="#">✦ Profil</a>
+  </nav>
+  <button class="hud__icon" type="button">⏸</button>
+</header>
+
+<div class="stage">
+  <!-- scène d'accueil -->
+  <section class="home__stage">
+    <nav class="home__menu">
+      <a href="#" class="active"><i>⌂</i>Accueil</a>
+      <a href="#"><i>▦</i>Collection</a>
+      <a href="#"><i>⌘</i>Decks</a>
+      <a href="#"><i>⚔</i>Duel</a>
+      <a href="#"><i>✦</i>Profil</a>
+    </nav>
+
+    <div class="center">
+      <div class="logo logo--home">
+        <span class="logo__line">MULTIVERSE</span>
+        <span class="logo__line logo__line--gold">CARTOON</span>
+        <span class="logo__badge">TCG</span>
+      </div>
+      <div class="setup">
+        <select><option>Marée Cosmique — 60 cartes</option></select>
+        <button class="play" type="button"><span>⚔</span> JOUER</button>
+      </div>
+      <p class="welcome">Bienvenue sur MULTIVERSE CARTOON TCG !</p>
+    </div>
+
+    <div class="fan">
+      <article class="card size-md rarity-ultra" style="--i:0"><div class="card__frame">
+        <div class="card__top"><span class="card__cost">6</span><span class="card__rarity">UR</span></div>
+        <header class="card__head"><span class="card__name">Héros Multivers</span><span class="card__sub">Multivers</span></header>
+        <div class="card__artwrap"><img class="card__art" src="public/assets/cards/specials/spx-heros-multivers.svg" alt=""><div class="card__pop"><span>POP.</span><strong>12</strong></div></div>
+        <div class="card__type">Invocation spéciale • Crossover</div>
+        <div class="card__text">Invoque jusqu'à deux personnages de deux univers différents.</div>
+        <footer class="card__stats"><span class="pill pill--atk"><i>ATK</i><b>3500</b></span><span class="pill pill--def"><i>DEF</i><b>3000</b></span></footer>
+      </div></article>
+
+      <article class="card size-md rarity-legendary" style="--i:1"><div class="card__frame">
+        <div class="card__top"><span class="card__cost">0</span><span class="card__rarity">L</span></div>
+        <header class="card__head"><span class="card__name">Bob l'éponge</span><span class="card__sub">Bikini Bottom</span></header>
+        <div class="card__artwrap"><img class="card__art" src="public/assets/cards/characters/chr-bob.jpg" alt=""><div class="card__pop"><span>POP.</span><strong>12</strong></div></div>
+        <div class="card__type">Personnage • Héros / Créature Marine</div>
+        <div class="card__text">Lorsqu'il est invoqué, piochez 1 carte.</div>
+        <footer class="card__stats"><span class="pill pill--atk"><i>ATK</i><b>1200</b></span><span class="pill pill--def"><i>DEF</i><b>1000</b></span></footer>
+        <p class="card__signature">« J'adore mon travail ! »</p>
+      </div></article>
+
+      <article class="card size-md rarity-epic" style="--i:2"><div class="card__frame">
+        <div class="card__top"><span class="card__cost">4</span><span class="card__rarity">E</span></div>
+        <header class="card__head"><span class="card__name">Ben Tennyson</span><span class="card__sub">Ben 10</span></header>
+        <div class="card__artwrap"><img class="card__art" src="public/assets/cards/characters/chr-ben-tenyson.svg" alt=""><div class="card__pop"><span>POP.</span><strong>9</strong></div></div>
+        <div class="card__type">Personnage • Héros / Humain</div>
+        <div class="card__text">Lorsqu'il est invoqué, piochez 1 carte.</div>
+        <footer class="card__stats"><span class="pill pill--atk"><i>ATK</i><b>1800</b></span><span class="pill pill--def"><i>DEF</i><b>1400</b></span></footer>
+      </div></article>
+    </div>
+  </section>
+
+  <!-- tuiles -->
+  <section class="dash">
+    <article class="tile panel">
+      <div class="phead"><h2>Deck actif</h2><span class="chip chip--ok">Valide</span></div>
+      <div class="pbody">
+        <p class="deckname">Marée Cosmique</p>
+        <div class="stats">
+          <div class="deckstat"><span>Cartes</span><b>60</b></div>
+          <div class="deckstat"><span>Extra</span><b>10</b></div>
+          <div class="deckstat"><span>Uniques</span><b>28</b></div>
+        </div>
+        <a class="btn btn--sm" style="margin-top:12px" href="#">Ouvrir le Deck Builder</a>
+      </div>
+    </article>
+
+    <article class="tile panel">
+      <div class="phead"><h2>Derniers duels</h2><span class="chip">3</span></div>
+      <div class="pbody">
+        <ul class="matches">
+          <li class="match"><span class="dot is-win"></span><span>IA — Marée Cosmique</span><span class="mturns">18 tours</span><b class="is-win">V</b></li>
+          <li class="match"><span class="dot is-loss"></span><span>IA — Marée Cosmique</span><span class="mturns">24 tours</span><b class="is-loss">D</b></li>
+          <li class="match"><span class="dot is-win"></span><span>IA — Marée Cosmique</span><span class="mturns">12 tours</span><b class="is-win">V</b></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="tile panel">
+      <div class="phead"><h2>Invocation à la une</h2><span class="chip chip--gold">Extra Deck</span></div>
+      <div class="pbody extra-row">
+        <article class="card size-sm rarity-ultra"><div class="card__frame">
+          <div class="card__top"><span class="card__cost">6</span><span class="card__rarity">UR</span></div>
+          <header class="card__head"><span class="card__name">Héros Multivers</span><span class="card__sub">Multivers</span></header>
+          <div class="card__artwrap"><img class="card__art" src="public/assets/cards/specials/spx-heros-multivers.svg" alt=""></div>
+          <div class="card__type">Crossover</div>
+        </div></article>
+        <div>
+          <b style="font-family:var(--font-display);font-size:15px">Héros Multivers</b>
+          <p style="margin:4px 0 0;font-size:12px;color:var(--muted)">Invoque deux personnages de deux univers différents.</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- cartes agrandies -->
+  <section class="sect panel">
+    <h2>Cartes — illustrations réelles sur Bob et Patrick</h2>
+    <div class="row">
+      <div>
+        <div class="caption">Bob l'éponge · illustration réelle</div>
+        <article class="card size-lg rarity-legendary"><div class="card__frame">
+          <div class="card__top"><span class="card__cost">0</span><span class="card__rarity">L</span></div>
+          <header class="card__head"><span class="card__name">Bob l'éponge</span><span class="card__sub">Bikini Bottom</span></header>
+          <div class="card__artwrap"><img class="card__art" src="public/assets/cards/characters/chr-bob.jpg" alt=""><div class="card__pop"><span>POP.</span><strong>12</strong></div></div>
+          <div class="card__type">Personnage • Héros / Créature Marine</div>
+          <div class="card__text">Lorsqu'il est invoqué, piochez 1 carte.</div>
+          <footer class="card__stats"><span class="pill pill--atk"><i>ATK</i><b>1200</b></span><span class="pill pill--def"><i>DEF</i><b>1000</b></span></footer>
+          <p class="card__signature">« J'adore mon travail et je fais les meilleurs pâtés de crabe ! »</p>
+        </div></article>
+      </div>
+      <div>
+        <div class="caption">Patrick Étoile · illustration réelle</div>
+        <article class="card size-lg rarity-ultra"><div class="card__frame">
+          <div class="card__top"><span class="card__cost">0</span><span class="card__rarity">UR</span></div>
+          <header class="card__head"><span class="card__name">Patrick Étoile</span><span class="card__sub">Bikini Bottom</span></header>
+          <div class="card__artwrap"><img class="card__art" src="public/assets/cards/characters/chr-patrick.jpg" alt=""><div class="card__pop"><span>POP.</span><strong>9</strong></div></div>
+          <div class="card__type">Personnage • Comique / Soutien</div>
+          <div class="card__text">Une fois par tour : vos personnages gagnent +300 DEF jusqu'à la fin du tour.</div>
+          <footer class="card__stats"><span class="pill pill--atk"><i>ATK</i><b>1500</b></span><span class="pill pill--def"><i>DEF</i><b>1700</b></span></footer>
+          <p class="card__signature">« Le plus dur, c'est de choisir quel morceau en premier ! »</p>
+        </div></article>
+      </div>
+      <div>
+        <div class="caption">Terrain · illustration panoramique</div>
+        <article class="card size-lg rarity-epic card--terrain"><div class="card__frame">
+          <div class="card__top"><span class="card__rarity">E</span></div>
+          <header class="card__head"><span class="card__name">Tour des Titans</span><span class="card__sub">Teen Titans</span></header>
+          <div class="card__artwrap"><img class="card__art" src="public/assets/cards/terrains/ter-tour.svg" alt=""></div>
+          <div class="card__type">Terrain • Effet continu</div>
+          <div class="card__text">Vos personnages gagnent +400 ATK.</div>
+          <footer class="card__stats"><span class="pill pill--neutral"><i>CONTINUE</i></span></footer>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- plateau face cachée -->
+  <section class="sect panel">
+    <h2>Plateau — cartes face cachée</h2>
+    <div class="caption">Zones Personnage : dos plein cadre + libellé</div>
+    <div class="board">
+      <div class="slot"><article class="card card--facedown"><div class="card__frame">
+        <img class="card__back" src="public/assets/ui/card-back.svg" alt=""><span class="card__back-label">Face cachée</span>
+      </div></article></div>
+      <div class="slot"><article class="card card--facedown"><div class="card__frame">
+        <img class="card__back" src="public/assets/ui/card-back.svg" alt=""><span class="card__back-label">Piège posé</span>
+      </div></article></div>
+      <div class="slot"></div><div class="slot"></div><div class="slot"></div>
+    </div>
+  </section>
+
+  <nav class="tabs">
+    <a class="tab" href="#"><i>▤</i>Deck</a>
+    <a class="tab" href="#"><i>❧</i>Règles</a>
+    <a class="tab" href="#"><i>❖</i>Récompenses</a>
+    <a class="tab" href="#"><i>☺</i>Amis</a>
+  </nav>
+</div>
+
+<script>
+  let p = 0
+  const fill = document.getElementById('fill')
+  const pct = document.getElementById('pct')
+  const timer = setInterval(() => {
+    p = Math.min(96, p + 6)
+    fill.style.width = p + '%'
+    pct.textContent = p + '%'
+  }, 90)
+  setTimeout(() => {
+    clearInterval(timer)
+    fill.style.width = '100%'
+    pct.textContent = '100%'
+    setTimeout(() => document.getElementById('loader').classList.add('is-hidden'), 350)
+  }, 1500)
+</script>
+</body>
+</html>

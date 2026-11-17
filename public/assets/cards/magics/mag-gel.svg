@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Gel Temporel">
+  <defs>
+    <radialGradient id="bg" cx="44%" cy="39%" r="85%">
+      <stop offset="0%" stop-color="hsl(216 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(188 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(188 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(216 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(216 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="245" cy="235.52" r="151" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="245" cy="235.52" r="193" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="245" cy="235.52" r="235" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="245" cy="235.52" r="67.58" fill="rgba(8,10,26,0.42)" stroke="hsl(216 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="245" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="56.68" font-weight="700" fill="hsl(216 96% 78%)" opacity="0.92">GT</text>
+  <polygon points="332.4755343559274,137.74323217738637 352.4755343559274,157.74323217738637 332.4755343559274,177.74323217738637 312.4755343559274,157.74323217738637" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="223.91660359090955,90.88845135155692 244.91660359090955,111.88845135155692 223.91660359090955,132.8884513515569 202.91660359090955,111.88845135155692" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="420.5459559043802,292.4991671413169 442.5459559043802,314.4991671413169 420.5459559043802,336.4991671413169 398.5459559043802,314.4991671413169" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="426.88500883368806,107.68063728956716 440.88500883368806,121.68063728956716 426.88500883368806,135.68063728956716 412.88500883368806,121.68063728956716" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="230.4705436057962,125.9882487115432 240.4705436057962,135.9882487115432 230.4705436057962,145.9882487115432 220.4705436057962,135.9882487115432" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="414.21953492694837,201.62251979173985 422.21953492694837,209.62251979173985 414.21953492694837,217.62251979173985 406.21953492694837,209.62251979173985" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="93.60978376483169,118.87496441628525 108.60978376483169,133.87496441628525 93.60978376483169,148.87496441628525 78.60978376483169,133.87496441628525" fill="hsl(216 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">ADVENTURE TIME</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❖ PLACEHOLDER MAG-GEL</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Le Fantôme">
+  <defs>
+    <radialGradient id="bg" cx="54%" cy="49%" r="85%">
+      <stop offset="0%" stop-color="hsl(124 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(96 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(96 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(124 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(124 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="295" cy="235.52" r="149" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="295" cy="235.52" r="191" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="295" cy="235.52" r="233" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="295" cy="235.52" r="66.34" fill="rgba(8,10,26,0.42)" stroke="hsl(124 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="295" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="55.64" font-weight="700" fill="hsl(124 96% 78%)" opacity="0.92">LF</text>
+  <polygon points="165.4639551428936,181.40595724434607 187.4639551428936,203.40595724434607 165.4639551428936,225.40595724434607 143.4639551428936,203.40595724434607" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="233.71908062775358,106.57757788966454 247.71908062775358,120.57757788966454 233.71908062775358,134.57757788966455 219.71908062775358,120.57757788966454" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="245.4060114020681,82.30435080166293 255.4060114020681,92.30435080166293 245.4060114020681,102.30435080166293 235.4060114020681,92.30435080166293" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="168.34929584826403,373.4521163865978 176.34929584826403,381.4521163865978 168.34929584826403,389.4521163865978 160.34929584826403,381.4521163865978" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="363.5,313.94474582929706 370.5,320.94474582929706 363.5,327.94474582929706 356.5,320.94474582929706" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="189.72188771931246,131.50011601594036 196.72188771931246,138.50011601594036 189.72188771931246,145.50011601594036 182.72188771931246,138.50011601594036" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="394.38597215049913,99.42613122622521 401.38597215049913,106.42613122622521 394.38597215049913,113.42613122622521 387.38597215049913,106.42613122622521" fill="hsl(124 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">SCOOBY-DOO</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❂ PLACEHOLDER CHR-FANTOME</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de BMO Junior">
+  <defs>
+    <radialGradient id="bg" cx="56%" cy="41%" r="85%">
+      <stop offset="0%" stop-color="hsl(216 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(188 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(188 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(216 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(216 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="287" cy="235.52" r="151" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="287" cy="235.52" r="193" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="287" cy="235.52" r="235" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="287" cy="235.52" r="67.58" fill="rgba(8,10,26,0.42)" stroke="hsl(216 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="287" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="56.68" font-weight="700" fill="hsl(216 96% 78%)" opacity="0.92">BJ</text>
+  <polygon points="424.2886793427241,205.86403873877367 438.2886793427241,219.86403873877367 424.2886793427241,233.86403873877367 410.2886793427241,219.86403873877367" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="459.8946130743036,213.1729186907365 477.8946130743036,231.1729186907365 459.8946130743036,249.1729186907365 441.8946130743036,231.1729186907365" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="143.20571731498754,322.7304038424726 163.20571731498754,342.7304038424726 143.20571731498754,362.7304038424726 123.20571731498754,342.7304038424726" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="403.83911847936724,374.28401158282793 416.83911847936724,387.28401158282793 403.83911847936724,400.28401158282793 390.83911847936724,387.28401158282793" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="303.9398387333155,118.18598114373651 321.9398387333155,136.1859811437365 303.9398387333155,154.1859811437365 285.9398387333155,136.1859811437365" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="117.17849726355414,239.28716846410248 137.17849726355414,259.2871684641025 117.17849726355414,279.2871684641025 97.17849726355414,259.2871684641025" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="480.25114828492076,267.93115920023155 501.25114828492076,288.93115920023155 480.25114828492076,309.93115920023155 459.25114828492076,288.93115920023155" fill="hsl(216 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">ADVENTURE TIME</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❖ PLACEHOLDER CHR-X026</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

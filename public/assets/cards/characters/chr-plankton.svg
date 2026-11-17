@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Plankton">
+  <defs>
+    <radialGradient id="bg" cx="49%" cy="44%" r="85%">
+      <stop offset="0%" stop-color="hsl(72 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(44 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(44 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(72 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(72 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="290" cy="235.52" r="144" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="290" cy="235.52" r="186" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="290" cy="235.52" r="228" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="290" cy="235.52" r="63.24" fill="rgba(8,10,26,0.42)" stroke="hsl(72 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="290" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="53.04" font-weight="700" fill="hsl(72 96% 78%)" opacity="0.92">P</text>
+  <polygon points="326.3841309678439,309.87831158197787 343.3841309678439,326.87831158197787 326.3841309678439,343.87831158197787 309.3841309678439,326.87831158197787" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="453.9562645387929,242.2170472616084 465.9562645387929,254.2170472616084 453.9562645387929,266.2170472616084 441.9562645387929,254.2170472616084" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="433.86796006773017,126.48919465390435 442.86796006773017,135.48919465390435 433.86796006773017,144.48919465390435 424.86796006773017,135.48919465390435" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="437.260971505662,96.58644841372956 445.260971505662,104.58644841372956 437.260971505662,112.58644841372956 429.260971505662,104.58644841372956" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="158.9839079833455,240.10246239722522 165.9839079833455,247.10246239722522 158.9839079833455,254.10246239722522 151.9839079833455,247.10246239722522" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="444.9743507985355,263.3521373296543 459.9743507985355,278.3521373296543 444.9743507985355,293.3521373296543 429.9743507985355,278.3521373296543" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="489.87816540381914,221.54552752516014 508.87816540381914,240.54552752516014 489.87816540381914,259.54552752516014 470.87816540381914,240.54552752516014" fill="hsl(72 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">BIKINI BOTTOM</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">≈ PLACEHOLDER CHR-PLANKTON</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

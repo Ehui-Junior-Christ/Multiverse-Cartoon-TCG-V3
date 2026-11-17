@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="288" viewBox="0 0 512 288" role="img" aria-label="Illustration placeholder de Forêt des Toons">
+  <defs>
+    <radialGradient id="bg" cx="64%" cy="49%" r="85%">
+      <stop offset="0%" stop-color="hsl(242 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(214 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(214 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(242 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(242 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="288" fill="url(#bg)" />
+  <rect width="512" height="288" fill="url(#dots)" />
+  <rect width="512" height="288" fill="url(#halo)" />
+  <circle cx="235" cy="132.48000000000002" r="161" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="235" cy="132.48000000000002" r="203" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="235" cy="132.48000000000002" r="245" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="235" cy="132.48000000000002" r="73.78" fill="rgba(8,10,26,0.42)" stroke="hsl(242 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="235" y="158.48000000000002" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="61.88" font-weight="700" fill="hsl(242 96% 78%)" opacity="0.92">FD</text>
+  <polygon points="86.02269342169771,124.35229416259179 96.02269342169771,134.3522941625918 86.02269342169771,144.3522941625918 76.02269342169771,134.3522941625918" fill="hsl(242 96% 78%)" opacity="0.18" /><polygon points="303.5530065951119,2.314255322280104 311.5530065951119,10.314255322280104 303.5530065951119,18.314255322280104 295.5530065951119,10.314255322280104" fill="hsl(242 96% 78%)" opacity="0.26" /><polygon points="107.45060025253335,243.8808152011418 122.45060025253335,258.8808152011418 107.45060025253335,273.8808152011418 92.45060025253335,258.8808152011418" fill="hsl(242 96% 78%)" opacity="0.33999999999999997" /><polygon points="360.5,277.9881109719238 371.5,288.9881109719238 360.5,299.9881109719238 349.5,288.9881109719238" fill="hsl(242 96% 78%)" opacity="0.18" /><polygon points="253.158532167367,8.999648851918991 270.158532167367,25.99964885191899 253.158532167367,42.99964885191899 236.158532167367,25.99964885191899" fill="hsl(242 96% 78%)" opacity="0.26" /><polygon points="55.36222542907748,137.62099323081358 75.36222542907748,157.62099323081358 55.36222542907748,177.62099323081358 35.36222542907748,157.62099323081358" fill="hsl(242 96% 78%)" opacity="0.33999999999999997" /><polygon points="32.41304745010723,63.48859156304229 45.41304745010723,76.48859156304229 32.41304745010723,89.48859156304229 19.41304745010723,76.48859156304229" fill="hsl(242 96% 78%)" opacity="0.18" />
+  <text x="256" y="246" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">LOONEY TUNES</text>
+  <text x="256" y="270" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✺ PLACEHOLDER TER-FORET</text>
+  <rect width="512" height="288" fill="url(#floor)" />
+</svg>

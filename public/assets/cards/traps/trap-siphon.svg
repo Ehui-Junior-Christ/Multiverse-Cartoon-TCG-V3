@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Siphon du Multivers">
+  <defs>
+    <radialGradient id="bg" cx="59%" cy="34%" r="85%">
+      <stop offset="0%" stop-color="hsl(356 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(328 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(328 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(356 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(356 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="220" cy="235.52" r="164" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="220" cy="235.52" r="206" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="220" cy="235.52" r="248" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="220" cy="235.52" r="75.64" fill="rgba(8,10,26,0.42)" stroke="hsl(356 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="220" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="63.440000000000005" font-weight="700" fill="hsl(356 96% 78%)" opacity="0.92">SD</text>
+  <polygon points="81.14109043832468,180.00674178178446 92.14109043832468,191.00674178178446 81.14109043832468,202.00674178178446 70.14109043832468,191.00674178178446" fill="hsl(356 96% 78%)" opacity="0.18" /><polygon points="45.21717253382104,272.3233375941736 54.21717253382104,281.3233375941736 45.21717253382104,290.3233375941736 36.21717253382104,281.3233375941736" fill="hsl(356 96% 78%)" opacity="0.26" /><polygon points="13.267623427100148,173.3440092972141 21.267623427100148,181.3440092972141 13.267623427100148,189.3440092972141 5.267623427100148,181.3440092972141" fill="hsl(356 96% 78%)" opacity="0.33999999999999997" /><polygon points="-10.202177907309107,151.23157229286093 -3.202177907309107,158.23157229286093 -10.202177907309107,165.23157229286093 -17.202177907309107,158.23157229286093" fill="hsl(356 96% 78%)" opacity="0.18" /><polygon points="82.24121637042919,182.26865743509788 89.24121637042919,189.26865743509788 82.24121637042919,196.26865743509788 75.24121637042919,189.26865743509788" fill="hsl(356 96% 78%)" opacity="0.26" /><polygon points="156.38425334142565,102.67636422435116 163.38425334142565,109.67636422435116 156.38425334142565,116.67636422435116 149.38425334142565,109.67636422435116" fill="hsl(356 96% 78%)" opacity="0.33999999999999997" /><polygon points="408.57680615446475,302.1020310657526 423.57680615446475,317.1020310657526 408.57680615446475,332.1020310657526 393.57680615446475,317.1020310657526" fill="hsl(356 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">LES SUPER NANAS</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✿ PLACEHOLDER TRAP-SIPHON</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

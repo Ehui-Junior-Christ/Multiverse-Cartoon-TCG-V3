@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Caméra Embarquée">
+  <defs>
+    <radialGradient id="bg" cx="58%" cy="43%" r="85%">
+      <stop offset="0%" stop-color="hsl(72 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(44 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(44 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(72 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(72 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="269" cy="235.52" r="153" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="269" cy="235.52" r="195" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="269" cy="235.52" r="237" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="269" cy="235.52" r="68.82" fill="rgba(8,10,26,0.42)" stroke="hsl(72 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="269" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="57.72" font-weight="700" fill="hsl(72 96% 78%)" opacity="0.92">CE</text>
+  <polygon points="353.8559182644388,304.59747698000115 365.8559182644388,316.59747698000115 353.8559182644388,328.59747698000115 341.8559182644388,316.59747698000115" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="443.0413316894478,231.69058637172435 460.0413316894478,248.69058637172435 443.0413316894478,265.69058637172435 426.0413316894478,248.69058637172435" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="416.78531726798843,321.92542843295166 436.78531726798843,341.92542843295166 416.78531726798843,361.92542843295166 396.78531726798843,341.92542843295166" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="290.17884548768086,40.22577562186822 311.17884548768086,61.22577562186822 290.17884548768086,82.22577562186822 269.17884548768086,61.22577562186822" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="385.89429773026086,278.28926356035026 399.89429773026086,292.28926356035026 385.89429773026086,306.28926356035026 371.89429773026086,292.28926356035026" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="154.18966992666122,122.42659289193074 172.18966992666122,140.42659289193074 154.18966992666122,158.42659289193074 136.18966992666122,140.42659289193074" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="84.46395309248427,144.87391923197916 104.46395309248427,164.87391923197916 84.46395309248427,184.87391923197916 64.46395309248427,164.87391923197916" fill="hsl(72 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">BIKINI BOTTOM</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">≈ PLACEHOLDER SUP-CAMERA</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

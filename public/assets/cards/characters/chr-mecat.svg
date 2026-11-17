@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Mécat">
+  <defs>
+    <radialGradient id="bg" cx="56%" cy="31%" r="85%">
+      <stop offset="0%" stop-color="hsl(42 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(14 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(14 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(42 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(42 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="257" cy="235.52" r="153" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="257" cy="235.52" r="195" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="257" cy="235.52" r="237" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="257" cy="235.52" r="68.82" fill="rgba(8,10,26,0.42)" stroke="hsl(42 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="257" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="57.72" font-weight="700" fill="hsl(42 96% 78%)" opacity="0.92">M</text>
+  <polygon points="125.36515986389455,183.1384857621611 141.36515986389455,199.1384857621611 125.36515986389455,215.1384857621611 109.36515986389455,199.1384857621611" fill="hsl(42 96% 78%)" opacity="0.18" /><polygon points="183.0418041953776,330.7147811666179 202.0418041953776,349.7147811666179 183.0418041953776,368.7147811666179 164.0418041953776,349.7147811666179" fill="hsl(42 96% 78%)" opacity="0.26" /><polygon points="77.85203415325856,300.022929512465 90.85203415325856,313.022929512465 77.85203415325856,326.022929512465 64.85203415325856,313.022929512465" fill="hsl(42 96% 78%)" opacity="0.33999999999999997" /><polygon points="181.9088703668878,383.9168480910001 199.9088703668878,401.9168480910001 181.9088703668878,419.9168480910001 163.9088703668878,401.9168480910001" fill="hsl(42 96% 78%)" opacity="0.18" /><polygon points="376.57478155805603,169.72259629504504 388.57478155805603,181.72259629504504 376.57478155805603,193.72259629504504 364.57478155805603,181.72259629504504" fill="hsl(42 96% 78%)" opacity="0.26" /><polygon points="244.79261709477802,92.82692966726216 261.79261709477805,109.82692966726216 244.79261709477802,126.82692966726216 227.79261709477802,109.82692966726216" fill="hsl(42 96% 78%)" opacity="0.33999999999999997" /><polygon points="300.4535433809117,370.7116509584231 312.4535433809117,382.7116509584231 300.4535433809117,394.7116509584231 288.4535433809117,382.7116509584231" fill="hsl(42 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">TOM &amp; JERRY</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✷ PLACEHOLDER CHR-MECAT</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="288" viewBox="0 0 512 288" role="img" aria-label="Illustration placeholder de Port de Bikini Bottom">
+  <defs>
+    <radialGradient id="bg" cx="45%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="hsl(72 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(44 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(44 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(72 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(72 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="288" fill="url(#bg)" />
+  <rect width="512" height="288" fill="url(#dots)" />
+  <rect width="512" height="288" fill="url(#halo)" />
+  <circle cx="216" cy="132.48000000000002" r="182" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="216" cy="132.48000000000002" r="224" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="216" cy="132.48000000000002" r="266" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="216" cy="132.48000000000002" r="86.8" fill="rgba(8,10,26,0.42)" stroke="hsl(72 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="216" y="158.48000000000002" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="72.8" font-weight="700" fill="hsl(72 96% 78%)" opacity="0.92">PD</text>
+  <polygon points="245.5201902033781,4.939531031305748 252.5201902033781,11.939531031305748 245.5201902033781,18.939531031305748 238.5201902033781,11.939531031305748" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="15.099218385509573,142.98544433571874 30.099218385509573,157.98544433571874 15.099218385509573,172.98544433571874 0.09921838550957318,157.98544433571874" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="130.70842800821853,281.45834188456047 141.70842800821853,292.45834188456047 130.70842800821853,303.45834188456047 119.70842800821853,292.45834188456047" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="446.6690821545478,11.70061129256915 463.6690821545478,28.70061129256915 446.6690821545478,45.70061129256915 429.6690821545478,28.70061129256915" fill="hsl(72 96% 78%)" opacity="0.18" /><polygon points="46.4141114558299,121.01819238628099 66.4141114558299,141.018192386281 46.4141114558299,161.018192386281 26.414111455829897,141.018192386281" fill="hsl(72 96% 78%)" opacity="0.26" /><polygon points="28.217009895702176,168.87058815250455 49.217009895702176,189.87058815250455 28.217009895702176,210.87058815250455 7.217009895702176,189.87058815250455" fill="hsl(72 96% 78%)" opacity="0.33999999999999997" /><polygon points="320.3323329358004,272.49734777382525 334.3323329358004,286.49734777382525 320.3323329358004,300.49734777382525 306.3323329358004,286.49734777382525" fill="hsl(72 96% 78%)" opacity="0.18" />
+  <text x="256" y="246" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">BIKINI BOTTOM</text>
+  <text x="256" y="270" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">≈ PLACEHOLDER TER-PORT</text>
+  <rect width="512" height="288" fill="url(#floor)" />
+</svg>

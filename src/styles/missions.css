@@ -1,0 +1,120 @@
+/* ================================================================== */
+/* Missions quotidiennes et hebdomadaires                              */
+/* ================================================================== */
+
+.missions {
+  display: grid;
+  gap: 16px;
+}
+
+.missions__block .panel__body {
+  display: grid;
+  gap: 10px;
+}
+
+.missions__list {
+  display: grid;
+  gap: 10px;
+}
+
+.mission {
+  display: grid;
+  gap: 7px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.mission__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mission__head strong {
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.mission__bar {
+  height: 8px;
+  border-radius: 999px;
+  background: #0a0c18;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.mission__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #7ee7ff, #5ee0a0);
+  box-shadow: 0 0 10px rgba(94, 224, 160, 0.5);
+  transition: width 0.3s ease;
+}
+
+.mission__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+/* ================================================================== */
+/* MISSIONS UPGRADE — Effets visuels premium                           */
+/* ================================================================== */
+
+/* --- Mission card : hover amélioré --- */
+.mission {
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+}
+.mission:hover {
+  border-color: rgba(126, 231, 255, 0.25);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Mission terminée --- */
+.mission[data-done="true"],
+.mission.is-done {
+  border-color: rgba(94, 224, 160, 0.3);
+  background: rgba(94, 224, 160, 0.04);
+}
+
+/* --- Barre de progression : reflet animé --- */
+.mission__bar {
+  overflow: hidden;
+}
+.mission__fill {
+  position: relative;
+  overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.mission__fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shimmer 2.8s linear infinite;
+  background-size: 200% 100%;
+}
+
+/* --- Mission title : weight et style --- */
+.mission__head strong {
+  transition: color 0.2s ease;
+}
+.mission:hover .mission__head strong {
+  color: var(--gold-bright);
+}
+
+/* --- Récompenses : style amélioré --- */
+.mission__foot {
+  font-size: 11.5px;
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="288" viewBox="0 0 512 288" role="img" aria-label="Illustration placeholder de Maison-Treehouse">
+  <defs>
+    <radialGradient id="bg" cx="58%" cy="33%" r="85%">
+      <stop offset="0%" stop-color="hsl(216 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(188 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(188 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(216 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(216 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="288" fill="url(#bg)" />
+  <rect width="512" height="288" fill="url(#dots)" />
+  <rect width="512" height="288" fill="url(#halo)" />
+  <circle cx="259" cy="132.48000000000002" r="177" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="259" cy="132.48000000000002" r="219" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="259" cy="132.48000000000002" r="261" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="259" cy="132.48000000000002" r="83.7" fill="rgba(8,10,26,0.42)" stroke="hsl(216 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="259" y="158.48000000000002" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="70.2" font-weight="700" fill="hsl(216 96% 78%)" opacity="0.92">M</text>
+  <polygon points="390.77485915780335,42.98437524953668 408.77485915780335,60.98437524953668 390.77485915780335,78.98437524953668 372.77485915780335,60.98437524953668" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="60.757255079742635,124.9676748208845 80.75725507974263,144.9676748208845 60.757255079742635,164.9676748208845 40.757255079742635,144.9676748208845" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="342.499732244055,-45.13745234917056 363.499732244055,-24.13745234917056 342.499732244055,-3.137452349170559 321.499732244055,-24.13745234917056" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="522.7127869389017,80.40703844066599 544.7127869389017,102.40703844066599 522.7127869389017,124.40703844066599 500.7127869389017,102.40703844066599" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="146.47027058968777,197.36481975235748 168.47027058968777,219.36481975235748 146.47027058968777,241.36481975235748 124.47027058968777,219.36481975235748" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="355.47711442902107,243.79551163893262 369.47711442902107,257.7955116389326 355.47711442902107,271.7955116389326 341.47711442902107,257.7955116389326" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="230.60444298660067,280.98954239934824 248.60444298660067,298.98954239934824 230.60444298660067,316.98954239934824 212.60444298660067,298.98954239934824" fill="hsl(216 96% 78%)" opacity="0.18" />
+  <text x="256" y="246" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">ADVENTURE TIME</text>
+  <text x="256" y="270" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❖ PLACEHOLDER TER-TREEHOUSE</text>
+  <rect width="512" height="288" fill="url(#floor)" />
+</svg>

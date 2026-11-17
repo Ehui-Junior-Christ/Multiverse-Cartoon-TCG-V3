@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Vera">
+  <defs>
+    <radialGradient id="bg" cx="58%" cy="33%" r="85%">
+      <stop offset="0%" stop-color="hsl(124 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(96 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(96 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(124 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(124 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="239" cy="235.52" r="141" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="239" cy="235.52" r="183" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="239" cy="235.52" r="225" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="239" cy="235.52" r="61.38" fill="rgba(8,10,26,0.42)" stroke="hsl(124 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="239" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="51.480000000000004" font-weight="700" fill="hsl(124 96% 78%)" opacity="0.92">V</text>
+  <polygon points="357.7451260953648,257.81110721408373 371.7451260953648,271.81110721408373 357.7451260953648,285.81110721408373 343.7451260953648,271.81110721408373" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="401.9007048041126,221.61580493300553 419.9007048041126,239.61580493300553 401.9007048041126,257.6158049330055 383.9007048041126,239.61580493300553" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="378.30003589374985,323.8160258434999 390.30003589374985,335.8160258434999 378.30003589374985,347.8160258434999 366.30003589374985,335.8160258434999" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="218.86702342529094,384.2071021866191 235.86702342529094,401.2071021866191 218.86702342529094,418.2071021866191 201.86702342529094,401.2071021866191" fill="hsl(124 96% 78%)" opacity="0.18" /><polygon points="345.9458468596004,171.58216312563707 357.9458468596004,183.58216312563707 345.9458468596004,195.58216312563707 333.9458468596004,183.58216312563707" fill="hsl(124 96% 78%)" opacity="0.26" /><polygon points="134.2256196210941,308.4229758444433 151.2256196210941,325.4229758444433 134.2256196210941,342.4229758444433 117.2256196210941,325.4229758444433" fill="hsl(124 96% 78%)" opacity="0.33999999999999997" /><polygon points="293.30055909594887,79.17464104810887 313.30055909594887,99.17464104810887 293.30055909594887,119.17464104810887 273.30055909594887,99.17464104810887" fill="hsl(124 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">SCOOBY-DOO</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❂ PLACEHOLDER CHR-VERA</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

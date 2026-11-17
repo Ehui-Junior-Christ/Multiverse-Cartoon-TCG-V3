@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Lunettes du Multivers">
+  <defs>
+    <radialGradient id="bg" cx="57%" cy="42%" r="85%">
+      <stop offset="0%" stop-color="hsl(176 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(148 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(148 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(176 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(176 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="248" cy="235.52" r="148" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="248" cy="235.52" r="190" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="248" cy="235.52" r="232" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="248" cy="235.52" r="65.72" fill="rgba(8,10,26,0.42)" stroke="hsl(176 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="248" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="55.120000000000005" font-weight="700" fill="hsl(176 96% 78%)" opacity="0.92">LD</text>
+  <polygon points="164.2700393557105,151.35798700682977 171.2700393557105,158.35798700682977 164.2700393557105,165.35798700682977 157.2700393557105,158.35798700682977" fill="hsl(176 96% 78%)" opacity="0.18" /><polygon points="411.41448830951424,194.78198764799936 418.41448830951424,201.78198764799936 411.41448830951424,208.78198764799936 404.41448830951424,201.78198764799936" fill="hsl(176 96% 78%)" opacity="0.26" /><polygon points="451.87572871189553,223.39396192433668 458.87572871189553,230.39396192433668 451.87572871189553,237.39396192433668 444.87572871189553,230.39396192433668" fill="hsl(176 96% 78%)" opacity="0.33999999999999997" /><polygon points="76.79712751940104,109.48334163814623 83.79712751940104,116.48334163814623 76.79712751940104,123.48334163814623 69.79712751940104,116.48334163814623" fill="hsl(176 96% 78%)" opacity="0.18" /><polygon points="184.15186746111883,306.9782282927461 199.15186746111883,321.9782282927461 184.15186746111883,336.9782282927461 169.15186746111883,321.9782282927461" fill="hsl(176 96% 78%)" opacity="0.26" /><polygon points="393.71844111935906,153.47933963100934 412.71844111935906,172.47933963100934 393.71844111935906,191.47933963100934 374.71844111935906,172.47933963100934" fill="hsl(176 96% 78%)" opacity="0.33999999999999997" /><polygon points="94.03924563455448,126.15804982187433 107.03924563455448,139.15804982187433 94.03924563455448,152.15804982187433 81.03924563455448,139.15804982187433" fill="hsl(176 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">BEN 10</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">⌬ PLACEHOLDER EQ-LUNETTES</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Éveil : Miroir de Bikini">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="85%">
+      <stop offset="0%" stop-color="hsl(216 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(188 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(188 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(216 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(216 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="241" cy="235.52" r="161" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="241" cy="235.52" r="203" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="241" cy="235.52" r="245" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="241" cy="235.52" r="73.78" fill="rgba(8,10,26,0.42)" stroke="hsl(216 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="241" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="61.88" font-weight="700" fill="hsl(216 96% 78%)" opacity="0.92">ÉM</text>
+  <polygon points="135.6410896032044,143.6615845143072 151.6410896032044,159.6615845143072 135.6410896032044,175.6615845143072 119.64108960320439,159.6615845143072" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="187.4959780357391,98.51728535431049 198.4959780357391,109.51728535431049 187.4959780357391,120.51728535431049 176.4959780357391,109.51728535431049" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="54.99469574764163,138.05045117605317 71.99469574764163,155.05045117605317 54.99469574764163,172.05045117605317 37.99469574764163,155.05045117605317" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="322.71760676874635,386.39411698230856 342.71760676874635,406.39411698230856 322.71760676874635,426.39411698230856 302.71760676874635,406.39411698230856" fill="hsl(216 96% 78%)" opacity="0.18" /><polygon points="330.6704384496552,300.1976175178736 351.6704384496552,321.1976175178736 330.6704384496552,342.1976175178736 309.6704384496552,321.1976175178736" fill="hsl(216 96% 78%)" opacity="0.26" /><polygon points="125.83436843787968,119.12324811842959 139.83436843787968,133.1232481184296 125.83436843787968,147.1232481184296 111.83436843787968,133.1232481184296" fill="hsl(216 96% 78%)" opacity="0.33999999999999997" /><polygon points="304.4446599248339,366.9330550716646 322.4446599248339,384.9330550716646 304.4446599248339,402.9330550716646 286.4446599248339,384.9330550716646" fill="hsl(216 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">ADVENTURE TIME</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">❖ PLACEHOLDER SPX-X002</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>

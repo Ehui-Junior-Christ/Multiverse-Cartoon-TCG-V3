@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Illustration placeholder de Sam le Pirate">
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="40%" r="85%">
+      <stop offset="0%" stop-color="hsl(242 92% 62%)" />
+      <stop offset="45%" stop-color="hsl(214 74% 32%)" />
+      <stop offset="100%" stop-color="hsl(214 62% 9%)" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="hsl(242 96% 78%)" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="hsl(242 96% 78%)" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.72" />
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#fff" opacity="0.16" />
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <rect width="512" height="512" fill="url(#dots)" />
+  <rect width="512" height="512" fill="url(#halo)" />
+  <circle cx="266" cy="235.52" r="152" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 10" /><circle cx="266" cy="235.52" r="194" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.6" stroke-dasharray="10 16" /><circle cx="266" cy="235.52" r="236" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.2" stroke-dasharray="14 22" />
+  <circle cx="266" cy="235.52" r="68.2" fill="rgba(8,10,26,0.42)" stroke="hsl(242 96% 78%)" stroke-opacity="0.4" stroke-width="2" />
+  <text x="266" y="261.52" text-anchor="middle" font-family="Chakra Petch, Impact, sans-serif" font-size="57.2" font-weight="700" fill="hsl(242 96% 78%)" opacity="0.92">SL</text>
+  <polygon points="266,327.32 275,336.32 266,345.32 257,336.32" fill="hsl(242 96% 78%)" opacity="0.18" /><polygon points="410.25253762457726,149.46431305318487 426.25253762457726,165.46431305318487 410.25253762457726,181.46431305318487 394.25253762457726,165.46431305318487" fill="hsl(242 96% 78%)" opacity="0.26" /><polygon points="399.6998228148002,101.79718419850185 418.6998228148002,120.79718419850185 399.6998228148002,139.79718419850184 380.6998228148002,120.79718419850185" fill="hsl(242 96% 78%)" opacity="0.33999999999999997" /><polygon points="236.50761889595438,49.578758538016075 249.50761889595438,62.578758538016075 236.50761889595438,75.57875853801607 223.50761889595438,62.578758538016075" fill="hsl(242 96% 78%)" opacity="0.18" /><polygon points="129.58819093006707,240.1950662778616 147.58819093006707,258.1950662778616 129.58819093006707,276.1950662778616 111.58819093006707,258.1950662778616" fill="hsl(242 96% 78%)" opacity="0.26" /><polygon points="206.48849506133365,333.2446915320586 226.48849506133365,353.2446915320586 206.48849506133365,373.2446915320586 186.48849506133365,353.2446915320586" fill="hsl(242 96% 78%)" opacity="0.33999999999999997" /><polygon points="442.3940040005366,135.15929098843523 463.3940040005366,156.15929098843523 442.3940040005366,177.15929098843523 421.3940040005366,156.15929098843523" fill="hsl(242 96% 78%)" opacity="0.18" />
+  <text x="256" y="470" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="19" letter-spacing="5" fill="#fff" opacity="0.62">LOONEY TUNES</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Chakra Petch, sans-serif" font-size="14" letter-spacing="3" fill="#fff" opacity="0.35">✺ PLACEHOLDER CHR-X090</text>
+  <rect width="512" height="512" fill="url(#floor)" />
+</svg>
