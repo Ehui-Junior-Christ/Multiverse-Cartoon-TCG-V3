@@ -24,14 +24,17 @@ const pileView = ref<{ title: string; cards: string[] } | null>(null)
 const difficulty = ref<Difficulty>('beginner')
 const ranked = ref(true)
 
-// Game Juice & Effets 2D
+// Game Juice & Effets Cartoon 2D / 3D
 const isShaking = ref(false)
 interface DamagePopup {
   id: number
   side: 'player' | 'ai'
   amount: number
+  comicWord?: string
 }
 const damagePopups = ref<DamagePopup[]>([])
+const activeComicSplash = ref<{ text: string; side: 'player' | 'ai' } | null>(null)
+const summonPortalActive = ref(false)
 
 const rpsChoice = ref<'pierre' | 'feuille' | 'ciseaux' | null>(null)
 const rpsAi = ref<'pierre' | 'feuille' | 'ciseaux' | null>(null)
@@ -298,18 +301,31 @@ watch(
     const last = duel.events[duel.events.length - 1]
     if (!last) return
     if (last.kind === 'draw') playSfx('draw')
-    else if (last.kind === 'summon' || last.kind === 'special') playSfx('summon')
-    else if (last.kind === 'battle' && /Battle Start/.test(last.text)) playSfx('attack')
-    else if (last.kind === 'damage') {
+    else if (last.kind === 'summon' || last.kind === 'special') {
+      playSfx('summon')
+      // Portail d'invocation cartoon
+      summonPortalActive.value = true
+      window.setTimeout(() => (summonPortalActive.value = false), 850)
+    } else if (last.kind === 'battle' && /Battle Start/.test(last.text)) {
+      playSfx('attack')
+    } else if (last.kind === 'damage') {
       playSfx('damage')
       // Déclencher le Screen Shake
       isShaking.value = true
-      window.setTimeout(() => (isShaking.value = false), 420)
+      window.setTimeout(() => (isShaking.value = false), 450)
+      // Déclencher le splash de bande dessinée (POW, BAM, BOOM)
+      const comicWords = ['BAM!', 'POW!', 'WHAM!', 'BOOM!', 'OUCH!']
+      const comicWord = comicWords[Math.floor(Math.random() * comicWords.length)]
+      const sideTarget = last.side === 'player' ? 'player' : 'ai'
+      activeComicSplash.value = { text: comicWord, side: sideTarget }
+      window.setTimeout(() => {
+        if (activeComicSplash.value?.text === comicWord) activeComicSplash.value = null
+      }, 750)
+
       // Déclencher le popup de dégâts flottant
       if (last.amount && last.amount > 0) {
-        const sideTarget = last.side === 'player' ? 'player' : 'ai'
         const pid = Date.now() + Math.random()
-        damagePopups.value.push({ id: pid, side: sideTarget, amount: last.amount })
+        damagePopups.value.push({ id: pid, side: sideTarget, amount: last.amount, comicWord })
         window.setTimeout(() => {
           damagePopups.value = damagePopups.value.filter((p) => p.id !== pid)
         }, 1400)
@@ -317,7 +333,7 @@ watch(
     } else if (last.kind === 'destroy') {
       playSfx('destroy')
       isShaking.value = true
-      window.setTimeout(() => (isShaking.value = false), 250)
+      window.setTimeout(() => (isShaking.value = false), 300)
     }
   },
 )
@@ -452,17 +468,31 @@ watch(
     </div>
   </div>
 
-  <div v-else class="duel" :class="{ 'is-shaking': isShaking }">
+  <div v-else class="duel duel--cartoon" :class="{ 'is-shaking': isShaking }">
+    <!-- Fond cosmique & failles cartoon interactives -->
+    <div class="cartoon-rift-bg" aria-hidden="true">
+      <div class="rift-vortex rift-vortex--top"></div>
+      <div class="rift-vortex rift-vortex--bottom"></div>
+      <div class="comic-speedlines"></div>
+    </div>
+
+    <!-- Splash Comic Impact "POW!", "BAM!" -->
+    <transition name="comic-boom">
+      <div v-if="activeComicSplash" class="comic-splash-bubble" :class="`comic-splash--${activeComicSplash.side}`">
+        <span class="comic-splash-text">{{ activeComicSplash.text }}</span>
+      </div>
+    </transition>
+
     <!-- Indicateur d'action / réflexion IA avec spinner de latence -->
     <div v-if="duel.busy" class="duel__latency-banner">
       <div class="duel__latency-spinner"></div>
-      <span>L'adversaire réfléchit à son prochain coup...</span>
+      <span>L'adversaire prépare son attaque dimensionnelle...</span>
     </div>
 
     <div class="duel__arena">
       <!-- Adversaire -->
-      <section class="hud hud--ai">
-        <div class="avatar avatar--ai">{{ aiPlayer.name.slice(0, 1) }}</div>
+      <section class="hud hud--ai hud--comic">
+        <div class="avatar avatar--ai avatar--comic">{{ aiPlayer.name.slice(0, 1) }}</div>
         <div class="hud__id">
           <strong>{{ aiPlayer.name }}</strong>
           <span class="hint">{{ aiPlayer.deckName }}</span>
@@ -488,18 +518,19 @@ watch(
           <i aria-hidden="true">⛰</i>
           <b>{{ getCard(aiPlayer.terrain.cardId).name }}</b>
         </div>
-        <div class="hud__lp">
-          <span>LP</span>
+        <div class="hud__lp hud__lp--comic">
+          <span class="hud__lp-badge">LP IA</span>
           <b>{{ aiPlayer.lp.toLocaleString('fr-FR') }}</b>
-          <div class="lpbar"><div class="lpbar__fill lpbar__fill--ai" :style="{ width: `${(aiPlayer.lp / 10000) * 100}%` }" /></div>
+          <div class="lpbar lpbar--comic"><div class="lpbar__fill lpbar__fill--ai" :style="{ width: `${(aiPlayer.lp / 10000) * 100}%` }" /></div>
           <!-- Chiffres de dégâts flottants (AI) -->
           <div class="damage-popups-container">
             <transition-group name="damage-pop">
               <div
                 v-for="pop in damagePopups.filter((p) => p.side === 'ai')"
                 :key="pop.id"
-                class="damage-popup"
+                class="damage-popup damage-popup--comic"
               >
+                <span v-if="pop.comicWord" class="damage-popup__comic">{{ pop.comicWord }}</span>
                 -{{ pop.amount.toLocaleString('fr-FR') }}
               </div>
             </transition-group>
@@ -523,9 +554,16 @@ watch(
         <span v-if="aiPlayer.hand.length > 10" class="ai-hand-more">+{{ aiPlayer.hand.length - 10 }}</span>
       </div>
 
-      <!-- Plateau Master Duel 3D (Perspective & Tapis de jeu) -->
+      <!-- Plateau Cartoon Rift 3D (Perspective & Tapis de combat) -->
       <div class="duel__board">
-        <div class="duel__mat">
+        <div class="duel__mat" :class="{ 'duel__mat--summoning': summonPortalActive }">
+          <!-- Effet de portail dimensionnel lors des invocations -->
+          <transition name="portal-fade">
+            <div v-if="summonPortalActive" class="portal-summon-overlay" aria-hidden="true">
+              <div class="portal-ring"></div>
+              <div class="portal-rays"></div>
+            </div>
+          </transition>
           <section class="field field--ai">
             <div class="field__piles">
               <button class="pile" type="button" @click="openPile('ai', 'extra')">Extra<b>{{ aiPlayer.extra.length }}</b></button>
@@ -662,8 +700,8 @@ watch(
         </div>
       </div>
 
-      <section class="hud hud--player">
-        <div class="avatar" :class="{ 'avatar--has-img': Boolean(profile.profile.avatar) }">
+      <section class="hud hud--player hud--comic">
+        <div class="avatar avatar--comic" :class="{ 'avatar--has-img': Boolean(profile.profile.avatar) }">
           <img
             v-if="profile.profile.avatar"
             :src="profile.profile.avatar"
@@ -674,7 +712,20 @@ watch(
         </div>
         <div class="hud__id">
           <strong>{{ player.name }}</strong>
-          <span class="hint">{{ player.deckName }} · main {{ player.hand.length }} · deck {{ player.deck.length }}</span>
+          <span class="hint">{{ player.deckName }}</span>
+        </div>
+        <!-- Compteurs visuels Joueur (Main & Deck) -->
+        <div class="hud__counts">
+          <div class="hud__count-badge" title="Nombre de cartes dans votre main">
+            <span class="hud__count-icon">🎴</span>
+            <span class="hud__count-label">Main</span>
+            <b class="hud__count-val">{{ player.hand.length }}</b>
+          </div>
+          <div class="hud__count-badge" title="Cartes restantes dans votre deck">
+            <span class="hud__count-icon">📚</span>
+            <span class="hud__count-label">Deck</span>
+            <b class="hud__count-val">{{ player.deck.length }}</b>
+          </div>
         </div>
         <div
           v-if="player.terrain"
@@ -684,13 +735,25 @@ watch(
           <i aria-hidden="true">⛰</i>
           <b>{{ getCard(player.terrain.cardId).name }}</b>
         </div>
-        <div class="hud__lp">
-          <span>LP</span>
+        <div class="hud__lp hud__lp--comic">
+          <span class="hud__lp-badge hud__lp-badge--player">VOS LP</span>
           <b>{{ player.lp.toLocaleString('fr-FR') }}</b>
-          <div class="lpbar"><div class="lpbar__fill" :style="{ width: `${(player.lp / 10000) * 100}%` }" /></div>
+          <div class="lpbar lpbar--comic"><div class="lpbar__fill lpbar__fill--player" :style="{ width: `${(player.lp / 10000) * 100}%` }" /></div>
           <!-- Chiffres de dégâts flottants (Joueur) -->
           <div class="damage-popups-container">
             <transition-group name="damage-pop">
+              <div
+                v-for="pop in damagePopups.filter((p) => p.side === 'player')"
+                :key="pop.id"
+                class="damage-popup damage-popup--player damage-popup--comic"
+              >
+                <span v-if="pop.comicWord" class="damage-popup__comic">{{ pop.comicWord }}</span>
+                -{{ pop.amount.toLocaleString('fr-FR') }}
+              </div>
+            </transition-group>
+          </div>
+        </div>
+      </section>
               <div
                 v-for="pop in damagePopups.filter((p) => p.side === 'player')"
                 :key="pop.id"
@@ -704,7 +767,7 @@ watch(
       </section>
 
       <!-- Tray actions -->
-      <section class="tray">
+      <section v-if="state" class="tray">
         <div v-if="duel.waitingForPlayerChain" class="tray__block">
           <span class="tray__title">Chaîne — Vitesse {{ state.chain[state.chain.length - 1]?.speed ?? 1 }}</span>
           <p class="hint" style="margin: 0 0 8px">
@@ -803,24 +866,34 @@ watch(
         </div>
       </section>
 
-      <!-- Main -->
-      <section class="handrail">
+      <!-- Main en éventail immersif Cartoon -->
+      <section v-if="player" class="handrail handrail--toon-fan">
         <div class="handrail__label">
-          <span>Main · {{ player.hand.length }}</span>
-          <span class="hint">Sans limite de main</span>
+          <span class="handrail__title">🎴 VOTRE MAIN</span>
+          <span class="handrail__pill">{{ player.hand.length }} carte(s)</span>
         </div>
-        <div class="handrail__cards">
-          <CardFace
+        <div class="handrail__cards handrail__cards--fan">
+          <div
             v-for="(inst, index) in player.hand"
             :key="inst.uid"
-            :card-id="inst.cardId"
-            size="sm"
-            :selected="selectedHand === index"
-            :disabled="!duel.isPlayerTurn"
-            @select="selectHand(index)"
-            @inspect="(id) => (detail = id)"
-          />
-          <p v-if="!player.hand.length" class="hint">Main vide — une main vide ne provoque pas de défaite.</p>
+            class="hand-fan-slot"
+            :style="{
+              '--card-index': index,
+              '--total-cards': player.hand.length,
+              '--fan-deg': `${(index - (player.hand.length - 1) / 2) * (player.hand.length > 7 ? 3.5 : 5)}deg`,
+              '--fan-y': `${Math.abs(index - (player.hand.length - 1) / 2) * 4}px`
+            }"
+          >
+            <CardFace
+              :card-id="inst.cardId"
+              size="sm"
+              :selected="selectedHand === index"
+              :disabled="!duel.isPlayerTurn"
+              @select="selectHand(index)"
+              @inspect="(id) => (detail = id)"
+            />
+          </div>
+          <p v-if="!player.hand.length" class="hint">Main vide — votre courage reste intact !</p>
         </div>
       </section>
     </div>
@@ -829,7 +902,7 @@ watch(
     <aside class="logpanel panel">
       <div class="panel__head">
         <h2>Journal</h2>
-        <span class="chip">{{ state.turn }} tours</span>
+        <span class="chip">{{ state?.turn ?? 0 }} tours</span>
         <button class="btn btn--sm" type="button" style="margin-left: auto" @click="openReplay">⟲ Replay</button>
       </div>
       <div class="panel__body logpanel__body">
@@ -844,17 +917,26 @@ watch(
 
     <p v-if="duel.error" class="toast" role="alert" @click="duel.error = null">{{ duel.error }}</p>
 
-    <!-- Résultat -->
-    <div v-if="state.over" class="modal">
-      <div class="result panel">
-        <span class="chip" :class="state.winner === 'player' ? 'chip--ok' : 'chip--warn'">Duel terminé</span>
-        <h2 class="result__title">{{ resultTitle }}</h2>
-        <p class="hint">{{ state.endReason }}</p>
-        <p class="hint">Tour {{ state.turn }} · {{ player.name }} {{ player.lp }} LP · {{ aiPlayer.name }} {{ aiPlayer.lp }} LP</p>
-        <div style="display: flex; gap: 10px; justify-content: center; margin-top: 16px; flex-wrap: wrap">
-          <button class="btn btn--gold" type="button" @click="replay">Revanche</button>
-          <RouterLink to="/" class="btn">Menu</RouterLink>
-          <RouterLink to="/profil" class="btn">Voir l'historique</RouterLink>
+    <!-- Résultat : Animation Cartoon Showdown -->
+    <div v-if="state?.over" class="modal modal--showdown">
+      <div class="result-cartoon" :class="state?.winner === 'player' ? 'result-cartoon--victory' : 'result-cartoon--defeat'">
+        <div class="showdown-rays" aria-hidden="true"></div>
+        <div class="showdown-badge">
+          <span class="showdown-icon">{{ state?.winner === 'player' ? '🏆' : '💀' }}</span>
+          <span class="showdown-ribbon">{{ state?.winner === 'player' ? 'VICTOIRE ÉCLATANTE !' : 'DÉFAITE DUEL' }}</span>
+        </div>
+        <h2 class="showdown-title">{{ resultTitle }}</h2>
+        <p class="showdown-reason">{{ state?.endReason }}</p>
+        <div class="showdown-score">
+          <span>Tour {{ state?.turn }}</span>
+          <b>{{ player?.name }} : {{ player?.lp.toLocaleString('fr-FR') }} LP</b>
+          <span>vs</span>
+          <b>{{ aiPlayer?.name }} : {{ aiPlayer?.lp.toLocaleString('fr-FR') }} LP</b>
+        </div>
+        <div class="showdown-buttons">
+          <button class="btn btn--gold btn--comic-action" type="button" @click="replay">⚡ REVANCHE IMMÉDIATE</button>
+          <RouterLink to="/" class="btn btn--comic-sub">Retour au Menu</RouterLink>
+          <RouterLink to="/profil" class="btn btn--comic-sub">Voir Historique</RouterLink>
         </div>
       </div>
     </div>

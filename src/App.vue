@@ -1,15 +1,23 @@
 <script setup lang="ts">
-import { onMounted, ref, watchEffect } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
+import { computed, onMounted, ref, watchEffect } from 'vue'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
 import LoadingScreen from './components/LoadingScreen.vue'
 import { useProfileStore } from './stores/profile'
 import { useAuthStore } from './stores/auth'
+import { useDuelStore } from './stores/duel'
 import { isMuted, setMuted } from './lib/audio'
 
+const route = useRoute()
 const store = useProfileStore()
 const auth = useAuthStore()
+const duel = useDuelStore()
 const reduceMotion = ref(localStorage.getItem('mv-reduce-motion') === '1')
 const soundOn = ref(!isMuted())
+
+// Détecte si un duel est activement en cours pour passer en mode immersif
+const isImmersiveDuel = computed(() => {
+  return route.path === '/duel' && duel.state !== null && !duel.state.over
+})
 
 function toggleSound(): void {
   soundOn.value = !soundOn.value
@@ -28,11 +36,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="app">
+  <div class="app" :class="{ 'app--duel-mode': isImmersiveDuel }">
     <div class="app__bg" aria-hidden="true" />
     <div class="app__vignette" aria-hidden="true" />
 
-    <header class="hud">
+    <header v-if="!isImmersiveDuel" class="hud">
       <RouterLink to="/" class="hud__logo" aria-label="Multiverse Cartoon TCG — accueil">
         <span class="hud__logo-top">MULTIVERSE</span>
         <span class="hud__logo-bottom">CARTOON</span>
@@ -103,7 +111,36 @@ onMounted(() => {
       </button>
     </header>
 
-    <main class="stage">
+    <!-- Mini-barre de contrôle immersif pendant le duel -->
+    <div v-else class="duel-mini-controls" aria-label="Contrôles du duel">
+      <div class="duel-mini-brand">
+        <span class="brand-spark">⚡</span>
+        <span class="brand-title">MULTIVERSE CARTOON TCG</span>
+        <span class="brand-pill">COMBAT ACTIF</span>
+      </div>
+      <div class="duel-mini-actions">
+        <button
+          class="hud__icon hud__icon--duel"
+          type="button"
+          :aria-pressed="soundOn"
+          :title="soundOn ? 'Couper le son' : 'Activer le son'"
+          @click="toggleSound"
+        >
+          {{ soundOn ? '♪' : '♪̸' }}
+        </button>
+        <button
+          class="hud__icon hud__icon--duel"
+          type="button"
+          :aria-pressed="reduceMotion"
+          :title="reduceMotion ? 'Réactiver les effets cartoon' : 'Réduire les effets'"
+          @click="reduceMotion = !reduceMotion"
+        >
+          {{ reduceMotion ? '▷' : '⏸' }}
+        </button>
+      </div>
+    </div>
+
+    <main class="stage" :class="{ 'stage--duel': isImmersiveDuel }">
       <LoadingScreen v-if="!store.ready" />
       <RouterView v-else />
     </main>

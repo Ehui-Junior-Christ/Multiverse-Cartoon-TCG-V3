@@ -2153,3 +2153,459 @@
   overflow: hidden;
   background: transparent;
 }
+
+/* ================================================================== */
+/* MULTIVERSE CARTOON TCG — IDENTITÉ VISUELLE & ARÈNE DE DUEL 3D      */
+/* ================================================================== */
+
+/* --- Mode Immersif Plein Écran en Duel --- */
+.app--duel-mode .stage {
+  padding: 0 10px 10px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.duel-mini-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 18px;
+  background: linear-gradient(90deg, rgba(10, 13, 30, 0.95), rgba(20, 15, 45, 0.95));
+  border-bottom: 2px solid rgba(126, 231, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  margin-bottom: 6px;
+}
+
+.duel-mini-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-spark {
+  font-size: 18px;
+  animation: pulseSpark 1.5s infinite alternate;
+}
+
+@keyframes pulseSpark {
+  0% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 2px #ffe9b0); }
+  100% { transform: scale(1.3) rotate(15deg); filter: drop-shadow(0 0 10px #ffe9b0); }
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--gold-bright);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.brand-pill {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background: rgba(255, 107, 122, 0.25);
+  color: #ff6b7a;
+  border: 1px solid #ff6b7a;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.duel-mini-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hud__icon--duel {
+  width: 34px;
+  height: 34px;
+  font-size: 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* --- Fond Cosmique / Faille Cartoon --- */
+.cartoon-rift-bg {
+  position: absolute;
+  inset: -20px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.75;
+}
+
+.rift-vortex {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: riftRotate 20s linear infinite;
+}
+
+.rift-vortex--top {
+  top: -200px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.45) 0%, rgba(255, 122, 182, 0.2) 50%, transparent 70%);
+}
+
+.rift-vortex--bottom {
+  bottom: -200px;
+  left: -100px;
+  background: radial-gradient(circle, rgba(126, 231, 255, 0.4) 0%, rgba(94, 224, 160, 0.25) 50%, transparent 70%);
+  animation-duration: 25s;
+  animation-direction: reverse;
+}
+
+@keyframes riftRotate {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.15); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+/* --- Splash Comics Impact (POW! BAM!) --- */
+.comic-splash-bubble {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  z-index: 999;
+  pointer-events: none;
+  background: #ffe600;
+  color: #111;
+  padding: 14px 34px;
+  border-radius: 28px;
+  border: 4px solid #000;
+  box-shadow: 6px 6px 0 #000, 0 0 35px rgba(255, 230, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comic-splash-text {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ff1133;
+  text-shadow: 2px 2px 0 #fff, 4px 4px 0 #000;
+  transform: scale(1.1);
+}
+
+.comic-boom-enter-active {
+  animation: comicBoom 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.comic-boom-leave-active {
+  transition: opacity 0.25s, transform 0.25s ease-in;
+}
+
+.comic-boom-leave-to {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.4) rotate(10deg);
+}
+
+@keyframes comicBoom {
+  0% { transform: translate(-50%, -50%) scale(0.2) rotate(20deg); opacity: 0; }
+  60% { transform: translate(-50%, -50%) scale(1.25) rotate(-12deg); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1) rotate(-8deg); opacity: 1; }
+}
+
+/* --- HUD Cartoon & Barres de vie --- */
+.hud--comic {
+  background: rgba(14, 18, 42, 0.88);
+  border: 2px solid rgba(126, 231, 255, 0.35);
+  border-radius: 18px;
+  padding: 10px 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), inset 0 0 15px rgba(126, 231, 255, 0.08);
+}
+
+.avatar--comic {
+  border: 2.5px solid var(--gold);
+  box-shadow: 0 0 12px rgba(230, 195, 119, 0.4);
+}
+
+.hud__lp--comic {
+  position: relative;
+}
+
+.hud__lp-badge {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2px;
+  display: block;
+}
+
+.hud__lp-badge--player {
+  color: var(--gold-bright);
+}
+
+.lpbar--comic {
+  height: 12px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.lpbar__fill--player {
+  background: linear-gradient(90deg, #5ee0a0, #7ee7ff);
+  box-shadow: 0 0 10px rgba(94, 224, 160, 0.6);
+}
+
+.lpbar__fill--ai {
+  background: linear-gradient(90deg, #ff7ab6, #ff6b7a);
+  box-shadow: 0 0 10px rgba(255, 107, 122, 0.6);
+}
+
+.damage-popup--comic {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.damage-popup__comic {
+  font-size: 14px;
+  background: #ffe600;
+  color: #000;
+  padding: 1px 6px;
+  border-radius: 6px;
+  font-weight: 900;
+  transform: rotate(-10deg);
+  border: 1px solid #000;
+}
+
+/* --- Tapis de combat 3D Cartoon --- */
+.duel--cartoon .duel__board {
+  position: relative;
+  z-index: 5;
+}
+
+.duel--cartoon .duel__mat {
+  background:
+    radial-gradient(130% 90% at 50% 50%, rgba(25, 32, 75, 0.82) 0%, rgba(8, 10, 24, 0.98) 100%),
+    linear-gradient(180deg, rgba(20, 26, 60, 0.85) 0%, rgba(7, 9, 20, 0.98) 100%);
+  border: 2px solid rgba(126, 231, 255, 0.4);
+  box-shadow:
+    0 30px 60px -10px rgba(0, 0, 0, 0.9),
+    0 0 35px rgba(126, 231, 255, 0.18),
+    inset 0 0 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Portail d'invocation */
+.portal-summon-overlay {
+  position: absolute;
+  inset: 15%;
+  pointer-events: none;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-ring {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 4px dashed #7ee7ff;
+  box-shadow: 0 0 40px #7ee7ff, inset 0 0 30px #a78bfa;
+  animation: portalSpin 3s linear infinite;
+}
+
+@keyframes portalSpin {
+  0% { transform: rotate(0deg) scale(0.9); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(0.9); }
+}
+
+.portal-fade-enter-active,
+.portal-fade-leave-active {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.portal-fade-enter-from,
+.portal-fade-leave-to {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+/* --- Main du joueur en éventail Cartoon --- */
+.handrail--toon-fan {
+  margin-top: 6px;
+  background: rgba(10, 14, 32, 0.92);
+  border: 2px solid rgba(167, 139, 250, 0.35);
+  border-radius: 22px;
+  padding: 10px 16px 14px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 30;
+}
+
+.handrail__title {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--gold-bright);
+}
+
+.handrail__pill {
+  font-size: 11px;
+  background: rgba(126, 231, 255, 0.18);
+  color: var(--cyan);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.handrail__cards--fan {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  min-height: 140px;
+  padding: 10px 0 0;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.hand-fan-slot {
+  transform-origin: bottom center;
+  transform: translateY(var(--fan-y, 0px)) rotate(var(--fan-deg, 0deg));
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), z-index 0.1s;
+  will-change: transform;
+  position: relative;
+  margin: 0 -10px;
+}
+
+.hand-fan-slot:hover {
+  transform: translateY(-38px) rotate(0deg) scale(1.22) !important;
+  z-index: 50 !important;
+}
+
+/* --- Modal Cartoon Showdown (Victoire / Défaite) --- */
+.modal--showdown {
+  backdrop-filter: blur(12px);
+  background: rgba(5, 6, 18, 0.85);
+  display: grid;
+  place-items: center;
+}
+
+.result-cartoon {
+  position: relative;
+  width: min(540px, 92vw);
+  background: linear-gradient(180deg, #181d3f 0%, #0a0d22 100%);
+  border-radius: 28px;
+  border: 4px solid var(--gold);
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.9), 0 0 50px rgba(230, 195, 119, 0.35);
+  overflow: hidden;
+  animation: showdownPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.result-cartoon--defeat {
+  border-color: #ff6b7a;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.9), 0 0 50px rgba(255, 107, 122, 0.35);
+}
+
+@keyframes showdownPop {
+  0% { transform: scale(0.6) rotate(-4deg); opacity: 0; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.showdown-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.showdown-icon {
+  font-size: 54px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.6));
+}
+
+.showdown-ribbon {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  padding: 4px 18px;
+  background: var(--gold);
+  color: #111;
+  border-radius: 20px;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0 #000;
+}
+
+.result-cartoon--defeat .showdown-ribbon {
+  background: #ff6b7a;
+  color: #fff;
+}
+
+.showdown-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 900;
+  margin: 10px 0 6px;
+  color: #fff;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.showdown-reason {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+.showdown-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 16px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  color: var(--cyan);
+}
+
+.showdown-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn--comic-action {
+  font-weight: 800;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(230, 195, 119, 0.4);
+  transform: translateY(0);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn--comic-action:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(230, 195, 119, 0.6);
+}
+
+.btn--comic-sub {
+  border-radius: 12px;
+  padding: 10px 18px;
+}
